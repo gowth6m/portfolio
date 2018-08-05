@@ -1,6 +1,7 @@
 /*--Imports--*/
 @import url('https://fonts.googleapis.com/css?family=Cutive+Mono|Montserrat|Poiret+One|Unica+One');
 @import url('https://fonts.googleapis.com/css?family=Maven+Pro|Megrim|Open+Sans|Orbitron');
+@import url('https://fonts.googleapis.com/css?family=Abel');
 
 /*--Overall CSS--*/
 * {
@@ -8,15 +9,27 @@
     transition: all ease-in-out 200ms;
 }
 
+::-moz-selection { /* Code for Firefox */
+    color: rgb(162, 0, 255);
+    background: rgb(255, 255, 255);
+}
+
+::selection {
+    color: rgb(162, 0, 255);
+    background: rgb(255, 255, 255);
+}
+
 body {
     max-width: 100%;
     margin: 0px;
     /*font-family: 'Poiret One', cursive;*/
-    font-family: 'Megrim', cursive;
+    font-family: 'Abel', sans-serif;
     text-align: center;
     background-repeat: no-repeat;
     background-color: cornflowerblue;
     color: aliceblue;
+    width: 100%;
+    height: 100%;
 }
 
 img {
@@ -30,8 +43,9 @@ header {
 }
 
 header .title{
+    font-family: 'Megrim', cursive;
     padding: 5px;
-    margin: 5px;
+    margin: 2px;
 }
 
 /*--Home-List--*/
@@ -40,6 +54,7 @@ header .title{
     background-color: rgb(255, 255, 255);
     padding-top: 0.9rem;
     padding-bottom: 0.9rem;
+    margin: 0;
 }
 
 .nav-bar0 li {
@@ -62,6 +77,47 @@ header .title{
     letter-spacing: 2px;
     font-size: 1.3rem;
 }
+
+.nav-bar0 {
+    width: 100%;
+    overflow: hidden;
+    right: 0%;
+    display: none;
+    float: unset;
+    position: fixed;
+}
+
+.nav-bar0-open {
+    display: inherit;
+}
+
+label {
+    margin: 0 1em 0 0;
+    font-size: 2em;
+    line-height: 1em;
+    cursor: pointer;
+    color: rgb(40, 78, 148);
+    right: 0.5em;
+    position: fixed;
+    padding: 0.4em;
+    z-index: 1000;
+    
+}
+
+#toggle {
+    display: none;
+    transition-duration: 1000ms;
+}
+
+#toggle:checked + .nav-bar0{
+    display: block;
+    
+}
+
+#toggle:checked + label {
+    position: inherit;
+}
+
 
 /*-------Copied from form (needs editing)--------*/
 .button-style:hover {
@@ -242,7 +298,11 @@ textarea{
 footer {
     background-color: #1f3944;
     color: azure;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Abel', sans-serif;
+}
+
+footer::selection {
+    background: #1f3944;
 }
 
 .footer-nav {
