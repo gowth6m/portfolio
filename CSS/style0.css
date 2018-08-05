@@ -1,0 +1,57 @@
+/*--Imports--*/
+@import url('https://fonts.googleapis.com/css?family=Cutive+Mono|Montserrat|Poiret+One|Unica+One');
+
+/*--Overall CSS--*/
+* {
+    box-sizing: border-box;
+    transition: all ease-in-out 200ms;
+}
+
+body {
+    margin: 0px;
+    font-family: 'Poiret One', cursive;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-color: cornflowerblue;
+    color: aliceblue;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*--Home--*/
+header .title{
+    padding: 5px;
+    margin: 5px;
+}
+
+/*--Home-List--*/
+.nav-bar0 ul {
+    list-style: none;
+    background-color: rgb(255, 255, 255);
+    padding-top: 0.9rem;
+    padding-bottom: 0.9rem;
+}
+
+.nav-bar0 li {
+    display: inline-block;
+}
+
+.nav-bar0 a {
+    text-decoration: none;
+    padding: 4px;
+    margin-left: 16px;
+    margin-right: 16px;
+    color: cornflowerblue;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+.nav-bar0 a:hover,
+.nav-bar0 a:focus {
+    color: darkturquoise;
+    letter-spacing: 2px;
+    font-size: 1.3rem;
+}
