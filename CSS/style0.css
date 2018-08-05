@@ -1,5 +1,6 @@
 /*--Imports--*/
 @import url('https://fonts.googleapis.com/css?family=Cutive+Mono|Montserrat|Poiret+One|Unica+One');
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro|Megrim|Open+Sans|Orbitron');
 
 /*--Overall CSS--*/
 * {
@@ -9,7 +10,8 @@
 
 body {
     margin: 0px;
-    font-family: 'Poiret One', cursive;
+    /*font-family: 'Poiret One', cursive;*/
+    font-family: 'Megrim', cursive;
     text-align: center;
     background-repeat: no-repeat;
     background-color: cornflowerblue;
@@ -22,6 +24,10 @@ img {
 }
 
 /*--Home--*/
+header {
+    height: 100vh;
+}
+
 header .title{
     padding: 5px;
     margin: 5px;
@@ -85,7 +91,6 @@ form {
     font-weight: bold;
     font-size: 25px;
     color: white; 
-    font-family: 'Poiret One', cursive;
     border: 1px solid white;
     cursor: pointer;
     margin-left: 10em;
@@ -97,14 +102,12 @@ form {
 }
 
 select{
-    font-family: 'Poiret One', cursive;
     font-size: 20px;
 }
 
 legend{
     font-size: 30px;
     color: white;
-    font-family: 'Poiret One', cursive;
     font-weight: bold;
 }
 
@@ -124,16 +127,137 @@ fieldset{
 textarea{
     font-size: 30px;
     color: black;
-    font-family: 'Poiret One', cursive;
-    
-}
-
-input{
-    font-family: 'Poiret One', cursive;
-    
 }
 
 .contact-child {
     position: center;
 }
+
 /*-----------------*/
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300,500,700);
+#ajerez {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  z-index: 9999;
+}
+#ajerez img {
+  box-sizing: border-box;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 2px solid #7482A5;
+  transition: border-radius 0.2s ease-in-out;
+}
+#ajerez img:hover {
+  border-radius: 30%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1.3em;
+  fill: currentColor;
+}
+
+.icon-paperplane {
+  font-size: 1em;
+  color: white;
+  margin-left: 1px;
+  margin-top: 5px;
+}
+
+.contact-button {
+  position: relative;
+  -webkit-perspective: 1000;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 1.2em;
+  border: 2px solid white;
+  border-radius: 4px;
+  padding: 20px 60px 20px 55px;
+  transition: 0.3s ease-in-out;
+}
+.contact-button span {
+  text-transform: none;
+  position: absolute;
+  color: #ee283e;
+  top: 20px;
+  left: 30px;
+  opacity: 0;
+  transition: all 0s ease 0s;
+}
+.contact-button:hover {
+  transition: 0.3s ease-in-out;
+  border: 2px solid white;
+  border-radius: 50px;
+  background-color: white;
+}
+.contact-button:hover > span {
+  opacity: 1;
+  transition: all 0.25s ease-in-out 0.1s;
+}
+.contact-button:hover:before {
+  transition: 0.3s ease-in-out;
+  background-color: #ee283e;
+}
+.contact-button:before, .contact-button:after {
+  content: "";
+  position: absolute;
+  top: -14px;
+  left: -12px;
+  width: 132px;
+  height: 25px;
+}
+.contact-button:before {
+  border: 2px solid #ee283e;
+  background-color: #1f3944;
+  -webkit-transform: skew(-25deg);
+          transform: skew(-25deg);
+  transition: 0.3s ease-in-out;
+}
+.contact-button:after {
+  content: "Available for work";
+  font-size: 0.45em;
+  top: -7px;
+  left: 0px;
+  color: white;
+}
+
+
+/*-----FOOTER----*/
+footer {
+    background-color: #1f3944;
+    color: azure;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.footer-nav {
+    text-decoration: none;
+}
+
+.footer-nav ul {
+    list-style: none;
+    padding-top: 0.9rem;
+    padding-bottom: 0.9rem;
+}
+
+.footer-nav li {
+    display: inline-block;
+}
+
+.footer-nav a {
+    text-decoration: none;
+}
