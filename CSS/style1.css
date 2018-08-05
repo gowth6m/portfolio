@@ -1,5 +1,6 @@
 /*----GLITCH EFFECT-------------*/
 .glitch {
+    max-width: 100%;
     font-size: 130px;
     line-height: 1;
     font-weight: 900;
@@ -65,6 +66,9 @@
 /*-----------------*/
 
 .glitch1 {
+    /* Required for text-overflow to do anything */
+    overflow: hidden;
+
     font-size: 6rem;
     line-height: 1;
     font-weight: 900;
@@ -75,6 +79,7 @@
     margin: 0;
     text-decoration: none;
     color: #fff;
+    width: 100%;
   }
   .glitch1:before, .glitch1:after {
     display: block;

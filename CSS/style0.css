@@ -9,6 +9,7 @@
 }
 
 body {
+    max-width: 100%;
     margin: 0px;
     /*font-family: 'Poiret One', cursive;*/
     font-family: 'Megrim', cursive;
