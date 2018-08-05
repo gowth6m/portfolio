@@ -1,7 +1,11 @@
-/*----GLITCH EFFECT-------------*/
+/*-----------------*/
+
 .glitch {
-    max-width: 100%;
-    font-size: 130px;
+    /* Required for text-overflow to do anything */
+    overflow: hidden;
+
+    font-size: 4rem;
+    letter-spacing: 5px;
     line-height: 1;
     font-weight: 900;
     position: absolute;
@@ -11,10 +15,11 @@
     margin: 0;
     text-decoration: none;
     color: #fff;
+    width: 100%;
   }
   .glitch:before, .glitch:after {
     display: block;
-    content: '17';
+    content: 'Gowtham Ravindrathas';
     position: absolute;
     top: 0;
     left: 0;
@@ -31,81 +36,12 @@
     z-index: -1;
   }
   .glitch:hover:before {
-    animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+    animation: glitch 0.3s cubic-bezier(0.15, 0.36, 0.35, 0.94) both infinite;
   }
   .glitch:hover:after {
-    animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+    animation: glitch 0.3s cubic-bezier(0.15, 0.36, 0.35, 0.94) reverse both infinite;
   }
   @keyframes glitch {
-    0% {
-      -webkit-transform: translate(0);
-      transform: translate(0);
-    }
-    20% {
-      -webkit-transform: translate(-5px, 5px);
-      transform: translate(-5px, 5px);
-    }
-    40% {
-      -webkit-transform: translate(-5px, -5px);
-      transform: translate(-5px, -5px);
-    }
-    60% {
-      -webkit-transform: translate(5px, 5px);
-      transform: translate(5px, 5px);
-    }
-    80% {
-      -webkit-transform: translate(5px, -5px);
-      transform: translate(5px, -5px);
-    }
-    to {
-      -webkit-transform: translate(0);
-      transform: translate(0);
-    }
-  }  
-
-/*-----------------*/
-
-.glitch1 {
-    /* Required for text-overflow to do anything */
-    overflow: hidden;
-
-    font-size: 6rem;
-    line-height: 1;
-    font-weight: 900;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0;
-    text-decoration: none;
-    color: #fff;
-    width: 100%;
-  }
-  .glitch1:before, .glitch1:after {
-    display: block;
-    content: 'Gowtham Ravindrathas';
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0.8;
-  }
-  .glitch1:after {
-    color: #f0f;
-    z-index: -2;
-  }
-  .glitch1:before {
-    color: #0ff;
-    z-index: -1;
-  }
-  .glitch1:hover:before {
-    animation: glitch1 0.3s cubic-bezier(0.15, 0.36, 0.35, 0.94) both infinite;
-  }
-  .glitch1:hover:after {
-    animation: glitch1 0.3s cubic-bezier(0.15, 0.36, 0.35, 0.94) reverse both infinite;
-  }
-  @keyframes glitch1 {
     0% {
       -webkit-transform: translate(0);
       transform: translate(0);
