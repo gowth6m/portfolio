@@ -14,12 +14,13 @@
         <!--JS-->
         <script src="./JS/script.js"></script>
         <script src="./JS/parallax.js"></script>
+        <script src="./JS/scroll.js"></script>
         <title>Gowthaman Ravindrathas</title>
     </head>
 
     <body>
-        <header>
-            <section class="navbox">
+        <header class="parallax-bg">
+            <section class="navbox" id="home">
 
                 <div class="menu-icon">
                     <span></span>
@@ -31,9 +32,9 @@
                     <img src="./Images/tab-blue.png" alt="logo" class="logo">
                     <nav class="navbar">
                         <ul>
-                            <li><a href="">Home</a></li>
-                            <li><a href="">About Me</a></li>
-                            <li><a href="">My Portfolio</a></li>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#aboutme">About Me</a></li>
+                            <li><a href="#myportfolio">My Portfolio</a></li>
                             <li><a href="">Contact Me</a></li>
                         </ul>
                     </nav>
@@ -41,17 +42,31 @@
 
             </section>
 
-            <section class="main">
+            <section class="main" id="home">
                 <h1 class="sidetext">HELLO<span>.0</span></h1>
                 <h1 class="info">I'm <br><span>Gowtham Ravindrathas</span></h1>
                 
+                <a href="#aboutme">
                 <div class="center-m">
                     <div class="mouse"></div>
                     <div class="caption">Scroll to View</div>
                 </div>
-            </section>
+                </a>
 
+            </section>
         </header>
+
+        <section class="about-me" id="aboutme">
+            <h1 class="sidetext2">ABOUT ME<span>.1</span></h1>
+            <h2 class="sidetext2-title"> ABOUT ME</h2>
+            <div class="t-about-me">I am a first year Computer Science student at University of Bristol, seeking internship or research opportunity that will allow me to utilise my problem-solving skills and attention to detail to further develop my abilities in the field of computer science.</div>
+            
+        </section>
+
+        <section class="my-portfolio" id="myportfolio">
+            <h1 id="aboutme" class="sidetext3">MY PORTFOLIO<span>.2</span></h1>
+            <div class="t-about-me">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum minus fugit aspernatur deserunt quo dolor quod officiis laborum nesciunt iusto quidem doloribus nam porro, voluptatibus molestiae veritatis voluptatem non corrupti!</div>
+        </section>
         
         
     </body>

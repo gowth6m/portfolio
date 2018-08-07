@@ -83,6 +83,18 @@ img {
     height: 40vh;
 }
 
+@media(max-width:600px) {
+    .popdown-bar.active {
+        height:50vh;
+    }
+}
+
+@media(max-width:500px) {
+    .popdown-bar.active {
+        height:100vh;
+    }
+}
+
 /*-------NAV BAR-------*/
 .navbar {
     margin-top: 80px;
@@ -124,16 +136,20 @@ img {
     transform: rotate(-90deg);
     -moz-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
-    color: white;
-    margin-top: 30%;
-    position: fixed;
+    color: rgb(255, 255, 255);
+    position: absolute;
     white-space: nowrap;
-    right: 70%;
+    right: calc(100vw - 2.8em);
+    margin-top: calc(100vh - 2.8em);
+    overflow: hidden;
 }
 
 .sidetext span {
     transform: rotate(90deg);
 }
+/*------------*/
+
+
 
 /*---------*/
 header {
@@ -141,6 +157,10 @@ header {
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
+    transition: 0s linear;
+    transition-property: background-position;
+    width: 100%;
+    overflow: hidden;
 }
 
 /*------INFO SECTION---------*/
@@ -148,7 +168,7 @@ header {
     font-family: 'Satisfy', cursive;
     color: cornflowerblue;
     text-align: left;
-    position: fixed;
+    position: absolute;
     left: 40%;
     top: 30%;
     font-size: 70px;
@@ -161,6 +181,13 @@ header {
     color: white;
     font-weight: 900;
     font-style: normal;
+}
+
+@media(max-width: 752px) {
+    .info {
+        left: 40%;
+        font-size: 60px;
+    }
 }
 
 @media(max-width: 500px) {
@@ -177,17 +204,17 @@ header {
     }
 }
 
-@media(max-width: 768px) {
+@media(max-width: 550px) {
     .sidetext {
-        right: 50%;
-        top: 40%;
+        display: none;
+        position: fixed;
     }
 }
 
 @media(max-width: 1024px) {
     .sidetext {
-        right: 55%;
-        top: 40%;
+        right: calc(100vw - 2.8em);
+        margin-top: calc(100vh - 2.8em);
     }
 }
 

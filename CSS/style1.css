@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+.about-me {
+    background-color: cornflowerblue;
+    height: 100vh;
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.sidetext2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 9em;
+    transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    color: rgb(255, 255, 255);
+    position: absolute;
+    right: calc(100vw - 3em);
+    margin-top: calc(100vh - 3.5em);
+}
+
+@media(max-width: 550px) {
+    .sidetext2 {
+        display: none;
+        position: fixed;
+    }
+}
+
+.sidetext2 span {
+    transform: rotate(90deg);
+}
+
+.t-about-me {
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 1.6em;
+    color: white;
+    position: absolute;
+    left: 35%;
+    margin-top: 10%;
+    margin-right: 10%;
+}
+
+.sidetext2-title {
+    font-size: 30px;
+    color: white;
+    display: none;
+    position: absolute;
+    text-align: center;
+}
+
+@media(max-width:500px) {
+    .t-about-me {
+        font-size: 15px;
+        text-align: center;
+        left: 0%;
+        margin-left: 10%;
+    }
+
+    .sidetext2-title{
+        display: block;
+        position: relative;
+    }
+}
+
+.profile-pic {
+    background-color: #ffffff;
+    height: 12em;
+    width: 12em;
+    position: absolute;
+    margin-top: 25%;
+    left: 55%;
+    border-radius: 50%;
+    box-shadow: 2px;
+    overflow: hidden;
+}
+
+/*----------------------*/
+.my-portfolio {
+    background-color: rgb(61, 61, 61);
+    height: 100vh;
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.sidetext3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 7.5em;
+    transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    color: rgb(255, 255, 255);
+    position: absolute;
+    right: calc(100vw - 4.5em);
+    margin-top: calc(100vh - 4.5em);
+    overflow: hidden;
+}
+
+.sidetext3 span {
+    transform: rotate(90deg);
+}
+
+@media(max-width: 550px) {
+    .sidetext3 {
+        display: none;
+        position: fixed;
+    }
+}
