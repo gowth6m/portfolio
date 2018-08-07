@@ -1,7 +1,13 @@
 $(document).ready(function() {
-    $('.menu-toggle').click(function() {
-        window.alert("lol");
-        $('nav-bar0').toggleClass('nav-bar0-open', 500);
-        
+    $(".menu-icon").click(function() {
+        $(".menu-icon").toggleClass("active")
+    })
+
+    $(".menu-icon").click(function() {
+        $(".popdown-bar").toggleClass("active")
+    })
+
+    $(".menu-icon").click(function() {
+        $(".navbar").toggleClass("active")
     })
 })
