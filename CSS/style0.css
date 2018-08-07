@@ -183,6 +183,13 @@ header {
     font-style: normal;
 }
 
+@media(max-width: 650px) {
+    .info {
+        left: 10%;
+        font-size: 50px;
+    }
+}
+
 @media(max-width: 752px) {
     .info {
         left: 40%;
