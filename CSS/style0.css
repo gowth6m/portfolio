@@ -19,8 +19,6 @@ img {
     height: auto;
 }
 
-
-
 /*-----logo------*/
 .logo {
     max-width: 80px;
@@ -151,8 +149,6 @@ img {
 }
 /*------------*/
 
-
-
 /*---------*/
 header {
     background: url(../Images/bg_blur.jpg);
@@ -236,7 +232,6 @@ header {
         font-size: 40px;
     }
 }
-
 
 @media(max-width: 550px) {
     .sidetext {

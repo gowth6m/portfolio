@@ -7,7 +7,7 @@ function parallax() {
     
     $('.parallax-bg').css('background-position','left '+(wScroll*0.55)+'px')
 
-    $('.parallax-bg2').css('background-position','center '+(wScroll*0.2)+'px')
+    $('.parallax-bg2').css('background-position','center '+(wScroll*0.45)+'px')
 
     $('.parallax-bg3').css('letter-spacing' +(wScroll*0.8)+'px')
 

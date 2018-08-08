@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
 .about-me {
-    background-color: cornflowerblue;
+    background: url(../Images/bg-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0s linear;
+    transition-property: background-position;
     height: 100vh;
     margin: 0;
     width: 100%;
@@ -35,7 +39,7 @@
     font-size: 20px;
     letter-spacing: 2px;
     line-height: 1.6em;
-    color: white;
+    color: aliceblue;
     position: absolute;
     left: 35%;
     margin-top: 10%;
@@ -78,7 +82,11 @@
 
 /*----------------------*/
 .my-portfolio {
-    background-color: rgb(61, 61, 61);
+    /*background-color: rgb(61, 61, 61);*/
+    background: url(../Images/bg_rain.jpg);
+    background-size: cover;
+    transition: 0s linear;
+    transition-property: background-position;
     height: 100vh;
     margin: 0;
     width: 100%;
@@ -126,8 +134,14 @@
 
 /*-------Contact me-------*/
 .contact-me {
-    background-color: cornflowerblue;
+    background: url(../Images/bg_cosmo.jpg);
+    background-size: cover;
+    transition: 0s linear;
+    transition-property: background-position;
     height: 100vh;
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
 }
 
 /*----------footer-----*/
