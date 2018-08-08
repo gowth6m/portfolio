@@ -170,3 +170,60 @@ div.arrow {
     background: #ff6600;
     color: white;
   }
+
+/*---------------*/
+.a {
+    color: white;
+    text-decoration: none;
+    font-size: 3em;
+  }
+.arrow1 {
+    text-align: center;
+    margin: 8% 0;
+    position: relative;
+    float: right;
+    right: 0;
+    left: 40%;
+    top: 75vh;
+  }
+.bounce {
+-webkit-animation: bounce 2s infinite;
+animation: bounce 2s infinite;
+}
+@-webkit-keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    }
+    40% {
+      -webkit-transform: translateY(-30px);
+              transform: translateY(-30px);
+    }
+    60% {
+      -webkit-transform: translateY(-15px);
+              transform: translateY(-15px);
+    }
+}
+  @keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    40% {
+      -webkit-transform: translateY(-30px);
+              transform: translateY(-30px);
+    }
+    60% {
+      -webkit-transform: translateY(-15px);
+              transform: translateY(-15px);
+    }
+  }
+  
