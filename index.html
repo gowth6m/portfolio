@@ -85,20 +85,40 @@
         </section>
 
         <section class="my-portfolio wrapper parallax-bg" id="myportfolio">
-            <h1 class="sidetext3">MY PORTFOLIO<span>.2</span></h1>
+            <h1 class="sidetext4">MY PORTFOLIO<span>.2</span></h1>
             <div class="t-about-me">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum minus fugit aspernatur deserunt quo dolor quod officiis laborum nesciunt iusto quidem doloribus nam porro, voluptatibus molestiae veritatis voluptatem non corrupti!</div>
             <div class="arrow1 bounce">
                 <a class="a fas fa-angle-down" href="#contact-me"></a>
             </div>
         </section>
         
-        <section class="contact-me wrapper" id="contact-me">
+        <section class="contact-me" id="contact-me">
             <h1 class="sidetext3">CONTACT ME<span>.3</span></h1>
-            <div class="t-about-me">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum minus fugit aspernatur deserunt quo dolor quod officiis laborum nesciunt iusto quidem doloribus nam porro, voluptatibus molestiae veritatis voluptatem non corrupti!</div>
-            <a class="arrowlink" href="#home"><div class="arrow"></div></a>
+
+            <form action="#" class="form">
+                <b style="color:white;">Your Name:</b>
+                <br>
+                <input class ="inputs" type="text" name="name" size="25" required></input>
+                <br>
+                <b style="color:white;">Email:</b>
+                <br>
+                <input type="email" name="email" class="inputs" size="25" required>
+                <br>
+                <b style="color:white;">Your Message:</b>
+                <br>
+                <textarea id ="para1" class ="inputs" name="message" rows="8" cols="32" maxlength="400" placeholder="  Write your message here..."></textarea>
+                <br>
+                <input type="submit" class="button-style" value="Submit" onclick="checker()" required/>
+            </form>
+            
+            <div class="arrow1 bounce">
+                <a class="a fas fa-angle-up" href="#home"></a>
+            </div>
+
+            <a href="#footer"><div class="slant-div"></div></a>
         </section>
         
-        <footer class="footer">
+        <footer class="footer" id="footer">
             <a href="#" class="fa fa-facebook"></a>
             <a href="#" class="fa fa-twitter"></a>
             <a href="#" class="fa fa-google"></a>

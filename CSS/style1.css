@@ -93,7 +93,7 @@
     overflow: hidden;
 }
 
-.sidetext3 {
+.sidetext4 {
     font-family: 'Raleway', sans-serif;
     font-size: 7.5em;
     transform: rotate(-90deg);
@@ -102,6 +102,30 @@
     color: rgb(255, 255, 255);
     position: absolute;
     right: calc(100vw - 4.5em);
+    margin-top: calc(100vh - 4.5em);
+    overflow: hidden;
+}
+
+.sidetext4 span {
+    transform: rotate(90deg);
+}
+
+@media(max-width: 550px) {
+    .sidetext4 {
+        display: none;
+        position: fixed;
+    }
+}
+
+.sidetext3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 7.5em;
+    transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    color: rgb(255, 255, 255);
+    position: absolute;
+    right: calc(100vw - 3.8em);
     margin-top: calc(100vh - 4.5em);
     overflow: hidden;
 }
@@ -144,6 +168,72 @@
     overflow: hidden;
 }
 
+.form {
+    display: block;
+    margin-top: 15vh;
+    font-size: 30px;
+    position: relative;
+
+}
+
+.inputs {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: black;
+    font-size: 20px;
+    width: 30vw;
+    height: 5vh;
+}
+
+#para1 {
+    height: auto;
+}
+
+.button-style {
+    text-align: center;
+    margin: 10px;
+    background: transparent;
+    font-size: 40px;
+    letter-spacing: 2px;
+    padding: 20px;
+    border: aqua solid 2px;
+    color: aqua;
+    border-radius: 5px;
+}
+
+.button-style:hover,
+.button-style:focus {
+    background-color: rgba(1, 17, 17, 0.493);
+    border-radius: 5%;
+    text-align: center;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.slant-div {
+    background-color: rgb(36, 36, 36);
+    position: absolute;
+    margin: 0;
+    padding: 5em;
+    width: 100%;
+    transform: skew(0deg, -2deg);
+    margin-top: 0vh;
+}
+
+.slant-div:hover,
+.slant-div:focus {
+    transform: skew(0deg, -4deg);
+}
+
+@media(max-width:600px) {
+    .slant-div{
+        display: none;
+    }
+
+    .inputs {
+        width: 80vw;
+    }
+}
+
 /*----------footer-----*/
 .footer{
     background-color: rgb(36, 36, 36);
@@ -155,3 +245,4 @@
     color: white;
     margin-top: 20px;
 }
+

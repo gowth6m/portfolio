@@ -127,6 +127,7 @@ img {
 .navbar li a:focus {
     background-color: cornflowerblue;
     letter-spacing: 20px;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.24), 0 5px 10px 0 rgba(0,0,0,0.19);
 }
 
 /*-------Side Text-------*/
@@ -179,9 +180,9 @@ header {
     color: cornflowerblue;
     text-align: left;
     position: absolute;
-    left: 40%;
+    left: 30%;
     top: 30%;
-    font-size: 70px;
+    font-size: 80px;
     font-style: italic;
     letter-spacing: 1px;
     overflow: hidden;
