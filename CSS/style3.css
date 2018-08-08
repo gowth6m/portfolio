@@ -174,7 +174,7 @@ div.arrow {
 /*---------------*/
 .a:hover,
 .a:focus {
-    color: cornflowerblue;
+    color: rgb(255, 255, 255);
 }
 
 .a {
