@@ -19,6 +19,8 @@ img {
     height: auto;
 }
 
+
+
 /*-----logo------*/
 .logo {
     max-width: 80px;
@@ -164,6 +166,18 @@ header {
 }
 
 /*------INFO SECTION---------*/
+.main {
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+}
+
+.wrapper {
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+}
+
 .info {
     font-family: 'Satisfy', cursive;
     color: cornflowerblue;
@@ -174,6 +188,9 @@ header {
     font-size: 70px;
     font-style: italic;
     letter-spacing: 1px;
+    overflow: hidden;
+    padding: 1rem;
+    
 }
 
 .info span {
@@ -190,9 +207,10 @@ header {
     }
 }
 
-@media(max-width: 752px) {
+@media(max-width: 768px) {
     .info {
-        left: 40%;
+        
+        right: 5%;
         font-size: 60px;
     }
 }
@@ -210,6 +228,15 @@ header {
         font-size: 40px;
     }
 }
+
+@media(max-width: 375px) {
+    .info {
+        left: 5%;
+        right: 5%;
+        font-size: 40px;
+    }
+}
+
 
 @media(max-width: 550px) {
     .sidetext {

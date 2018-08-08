@@ -8,17 +8,32 @@
         <script src="./JS/jquery-3.3.1.js"></script>
         <script src="./Frameworks/jquery-ui.min.js"></script>
         <!--CSS-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="./CSS/style0.css">
         <link rel="stylesheet" href="./CSS/style1.css">
         <link rel="stylesheet" href="./CSS/style2.css">
+        <link rel="stylesheet" href="./CSS/style3.css">
         <!--JS-->
         <script src="./JS/script.js"></script>
         <script src="./JS/parallax.js"></script>
         <script src="./JS/scroll.js"></script>
+        <script src="./JS/up_button.js"></script>
         <title>Gowthaman Ravindrathas</title>
     </head>
 
     <body>
+        <div id="load-screen">
+            <div class="container2">
+                <div class="part"></div>
+                <div class="part"></div>
+                <div class="part"></div>
+                <div class="part"></div>
+                <div class="part"></div>
+                <h1>Loading...</h1>
+            </div>
+            
+        </div>
+
         <header class="parallax-bg">
             <section class="navbox" id="home">
 
@@ -32,10 +47,10 @@
                     <img src="./Images/tab-blue.png" alt="logo" class="logo">
                     <nav class="navbar">
                         <ul>
-                            <li><a href="#home">Home</a></li>
-                            <li><a href="#aboutme">About Me</a></li>
-                            <li><a href="#myportfolio">My Portfolio</a></li>
-                            <li><a href="">Contact Me</a></li>
+                            <li><a class ="nav-button" href="#home">Home</a></li>
+                            <li><a class ="nav-button" href="#aboutme">About Me</a></li>
+                            <li><a class ="nav-button" href="#myportfolio">My Portfolio</a></li>
+                            <li><a class ="nav-button" href="#contact-me">Contact Me</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -43,9 +58,10 @@
             </section>
 
             <section class="main" id="home">
-                <h1 class="sidetext">HELLO<span>.0</span></h1>
-                <h1 class="info">I'm <br><span>Gowtham Ravindrathas</span></h1>
-                
+                <div class="">
+                    <h1 class="sidetext">HELLO<span>.0</span></h1>
+                    <h1 class="info">I'm <br><span>Gowtham Ravindrathas</span></h1>
+                </div>
                 <a href="#aboutme">
                 <div class="center-m">
                     <div class="mouse"></div>
@@ -56,18 +72,32 @@
             </section>
         </header>
 
-        <section class="about-me" id="aboutme">
+        <section class="about-me wrapper" id="aboutme">
             <h1 class="sidetext2">ABOUT ME<span>.1</span></h1>
             <h2 class="sidetext2-title"> ABOUT ME</h2>
             <div class="t-about-me">I am a first year Computer Science student at University of Bristol, seeking internship or research opportunity that will allow me to utilise my problem-solving skills and attention to detail to further develop my abilities in the field of computer science.</div>
-            
         </section>
 
-        <section class="my-portfolio" id="myportfolio">
-            <h1 id="aboutme" class="sidetext3">MY PORTFOLIO<span>.2</span></h1>
+        <section class="my-portfolio wrapper" id="myportfolio">
+            <h1 class="sidetext3">MY PORTFOLIO<span>.2</span></h1>
             <div class="t-about-me">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum minus fugit aspernatur deserunt quo dolor quod officiis laborum nesciunt iusto quidem doloribus nam porro, voluptatibus molestiae veritatis voluptatem non corrupti!</div>
         </section>
         
+        <section class="contact-me wrapper" id="contact-me">
+            <h1 class="sidetext3">CONTACT ME<span>.3</span></h1>
+            <div class="t-about-me">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum minus fugit aspernatur deserunt quo dolor quod officiis laborum nesciunt iusto quidem doloribus nam porro, voluptatibus molestiae veritatis voluptatem non corrupti!</div>
+            <a class="arrowlink" href="#home"><div class="arrow"></div></a>
+        </section>
         
+        <footer class="footer">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-google"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <br>
+            <b class="footer-text">© 2018 GOWTHAMAN RAVINDRATHAS . MADE IN UNITED KINGDOM</b>
+
+        </footer>
     </body>
 </html>

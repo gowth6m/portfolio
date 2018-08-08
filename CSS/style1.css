@@ -108,3 +108,36 @@
         position: fixed;
     }
 }
+
+/*-------CSS grid------*/
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.wrapper > h1{
+    background-color: transparent;
+} 
+
+.wrapper > h1:nth-child(odd){
+    background-color: transparent;
+} 
+
+
+/*-------Contact me-------*/
+.contact-me {
+    background-color: cornflowerblue;
+    height: 100vh;
+}
+
+/*----------footer-----*/
+.footer{
+    background-color: rgb(36, 36, 36);
+    height: 25vh;
+}
+
+.footer-text {
+    position: relative;
+    color: white;
+    margin-top: 20px;
+}
