@@ -286,6 +286,24 @@ animation: bounce 2s infinite;
     }
   }
 
+/*---*/
+.a:hover,
+.a:focus {
+    color: cornflowerblue;
+}
+
+.a {
+    color: white;
+    text-decoration: none;
+    font-size: 4.5em;
+  }
+.arrow2 {
+    text-align: center;
+    margin: 0;
+    position: relative;
+    padding: 0;
+    z-index: 10;
+  }
 /*---------------------------------------------------------*/
 /*---------------------------------------------------------*/
 /*---------------------------------------------------------*/
@@ -407,24 +425,12 @@ animation: bounce 2s infinite;
 /*---------------------------------------------------------*/
 /*---------------------------------------------------------*/
 /*--------Contact--------*/
-.contact-me {
-    background: url(../Images/bg_cosmo.jpg);
-    background-size: cover;
-    transition: 0s linear;
-    transition-property: background-position;
-    height: 100vh;
-    margin: 0;
-    width: 100%;
-    overflow: hidden;
-}
-
 .form {
     display: block;
-    margin-top: 15vh;
+    margin-top: 8vh;
     font-size: 30px;
-    position: absolute;
-    left: 40vw;
-
+    position: relative;
+    left: 10vw;
 }
 
 .inputs {
@@ -462,12 +468,12 @@ animation: bounce 2s infinite;
 
 .slant-div {
     background-color: rgb(36, 36, 36);
-    position: absolute;
+    position: relative;
     margin: 0;
     padding: 5em;
     width: 100%;
     transform: skew(0deg, -2deg);
-    margin-top: 90vh;
+    margin-top: 5vh;
 }
 
 .slant-div:hover,
@@ -733,11 +739,11 @@ animation: bounce 2s infinite;
 /*---------------------------------------------------------*/
 /*------Portfolio grid------*/
 .portfolio-grid {
-    position: absolute;
-    margin-top: 2em;
-    margin-bottom: 2em;
+    position: relative;
+    margin-top: 5vh;
+    margin-bottom: 2vh;
     left: 35vw;
-    width: 50vw;
+    width: 45vw;
     display: grid;
     height: auto;
     grid-template-rows: repeat(4, 9em);
