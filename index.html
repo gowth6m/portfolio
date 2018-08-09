@@ -2,6 +2,9 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Portfolio of Gowthaman Ravindrathas - designer and developer specialized in designing web and mobile interfaces.">
+        <meta name="keywords" content="webdesign, web development, UX, UI, iPhone apps, iPad apps, Branding, graphic design">
+        <meta name="author" content="Gowthaman Ravindrathas">
         <link href="./Images/tab-blue.png" type="image/x-icon" rel="shortcut icon">
         <!--Frameworks-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -10,10 +13,8 @@
         <!--CSS-->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="./CSS/style0.css">
-        <link rel="stylesheet" href="./CSS/style1.css">
-        <link rel="stylesheet" href="./CSS/style2.css">
-        <link rel="stylesheet" href="./CSS/style3.css">
+        <link rel="stylesheet" href="./CSS/stylesheet0.css">
+        
         <!--JS-->
         <script src="./JS/script.js"></script>
         <script src="./JS/parallax.js"></script>
@@ -59,23 +60,19 @@
             </section>
 
             <section class="main" id="home">
-                <div class="">
+                <div class="intro">
                     <h1 class="sidetext">HELLO<span>.0</span></h1>
                     <h1 class="info">I'm <br><span>Gowtham Ravindrathas</span></h1>
                 </div>
-                <a href="#aboutme">
-                <div class="center-m">
-                    <div class="mouse"></div>
-                    <div class="caption">Scroll to View</div>
+                <div class="arrow1 bounce">
+                    <a class="a fas fa-angle-down" href="#aboutme"></a>
                 </div>
-                </a>
 
             </section>
         </header>
 
-        <section class="about-me wrapper" id="aboutme">
+        <section class="about-me" id="aboutme">
             <h1 class="sidetext2">ABOUT ME<span>.1</span></h1>
-            <h2 class="sidetext2-title"> ABOUT ME</h2>
             <div class="t-about-me">
                 <i class="fas fa-user-graduate" style="font-size: 30px;"></i>
                 I am a first year Computer Science student at University of Bristol.
@@ -83,37 +80,47 @@
                 Seeking internship or research opportunity that will allow me to utilise my problem-solving skills and attention to detail to further develop my abilities in the field of computer science.
             </div>
 
+            <!--div class="profile-pic">pic</div-->
+
             <div class="arrow1 bounce">
                 <a class="a fas fa-angle-down" href="#myportfolio"></a>
             </div>
 
         </section>
 
-        <section class="my-portfolio wrapper parallax-bg" id="myportfolio">
-            <h1 class="sidetext4">MY PORTFOLIO<span>.2</span></h1>
-            <div class="t-about-me">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum minus fugit aspernatur deserunt quo dolor quod officiis laborum nesciunt iusto quidem doloribus nam porro, voluptatibus molestiae veritatis voluptatem non corrupti!</div>
+        <section class="my-portfolio parallax-bg" id="myportfolio">
+            <h1 class="sidetext3">MY PORTFOLIO<span>.2</span></h1>
+
+            <div class="portfolio-grid">
+                <div class="portfolio-item medium"></div>
+                <div class="portfolio-item large"></div>
+                <div class="portfolio-item medium"></div>
+                <div class="portfolio-item medium"></div>
+                <div class="portfolio-item "></div>
+            </div>
+
             <div class="arrow1 bounce">
                 <a class="a fas fa-angle-down" href="#contact-me"></a>
             </div>
         </section>
         
         <section class="contact-me" id="contact-me">
-            <h1 class="sidetext3">CONTACT ME<span>.3</span></h1>
+            <h1 class="sidetext4">CONTACT ME<span>.3</span></h1>
 
             <form action="#" class="form">
-                <b style="color:white;">Your Name:</b>
+                <b style="color:white;">YOUR NAME:</b>
                 <br>
                 <input class ="inputs" type="text" name="name" size="25" required></input>
                 <br>
-                <b style="color:white;">Email:</b>
+                <b style="color:white;">EMAIL:</b>
                 <br>
                 <input type="email" name="email" class="inputs" size="25" required>
                 <br>
-                <b style="color:white;">Your Message:</b>
+                <b style="color:white;">YOUR MESSAGE:</b>
                 <br>
                 <textarea id ="para1" class ="inputs" name="message" rows="8" cols="32" maxlength="400" placeholder="  Write your message here..."></textarea>
                 <br>
-                <input type="submit" class="button-style" value="Submit " required/>
+                <input type="submit" class="button-style" value="SUBMIT " required/>
             </form>
             
             <div class="arrow1 bounce">
