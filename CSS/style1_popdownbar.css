@@ -49,7 +49,7 @@
 
 .menu-icon.active span:nth-child(1) {
     -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-10px, 8px);
+    transform: rotate(-45deg) translate(-12px, 8px);
     /* background: #E31B6D; */
     /* background: #04C2C9; */
     /* background: #252934; */
