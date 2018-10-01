@@ -50,7 +50,10 @@
 .menu-icon.active span:nth-child(1) {
     -webkit-transform: rotate(-45deg) translate(-9px, 6px);
     transform: rotate(-45deg) translate(-10px, 8px);
-    background: #E31B6D;
+    /* background: #E31B6D; */
+    /* background: #04C2C9; */
+    /* background: #252934; */
+    background: black;
 }
 
 .menu-icon.active span:nth-child(2) {
@@ -60,7 +63,10 @@
 .menu-icon.active span:nth-child(3) {
     -webkit-transform: rotate(45deg) translate(-10px, -10px);
     transform: rotate(45deg) translate(-12px, -10px);
-    background: #E31B6D;
+    /* background: #E31B6D; */
+    /* background: #04C2C9; */
+    /* background: #252934; */
+    background: black;
 }
 
 /*---Popdown bar----*/
@@ -87,18 +93,6 @@
 .popdown-bar.active {
     /* height: 100vh; */
     width: 100%;
-}
-
-@media(max-width:600px) {
-    .popdown-bar.active {
-        height:50vh;
-    }
-}
-
-@media(max-width:500px) {
-    .popdown-bar.active {
-        height:100vh;
-    }
 }
 
 /*-----Nav Bar--------*/
@@ -170,9 +164,10 @@
     background-color: #E31B6D;
     position: fixed;
     width: 5em;
-    height: 10em;
-    top: 5vh;
-    left: 70vw;
-    padding: 22em 10em;
+    /* height: 14em; */
+    top: 2vh;
+    bottom: 2vh;
+    left: 68vw;
+    padding: 25vh 12vw;
     /* box-shadow: rgba(227, 27, 110, 0.75) 0.5em 0.5em; */
 }
