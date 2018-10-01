@@ -19,7 +19,7 @@
 .menu-icon {
     position: fixed;
     top: 0.2em;
-    right: 0.2em;
+    right: 0.5em;
     padding: 0.5em 0.8em;
     cursor: pointer;
     z-index: 10000;
