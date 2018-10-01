@@ -22,3 +22,8 @@ function parallax() {
         $('.window-tint').css('opacity', opacity)
     }
 }
+
+$(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+    $(".parallax-shape").css("transform","translateY(" +  (scroll/2)*0.55  + "px)");
+});

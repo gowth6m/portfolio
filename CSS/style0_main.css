@@ -241,8 +241,12 @@ SECTION 2
     margin-left: 2em;
 }
 
+.about-me-shape0-div {
+    position: relative;
+}
+
 .about-me-shape0 {
-    position: inherit;
+    position: absolute;
     padding: 13em 6em;
     background-color: #E31B6D;
     width: 20vw;
