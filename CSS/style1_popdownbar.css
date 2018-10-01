@@ -18,9 +18,9 @@
 
 .menu-icon {
     position: fixed;
-    top: 1em;
-    right: 0.8em;
-    padding: 0.8em 0.8em;
+    top: 0.2em;
+    right: 0.2em;
+    padding: 0.5em 0.8em;
     cursor: pointer;
     z-index: 10000;
     overflow: hidden;

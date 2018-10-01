@@ -11,6 +11,9 @@
 
     .menu-color-bar.active {
         padding: 25vh 18vw;
+        top: 0;
+        bottom: 0;
+        
     }
 
     .menu-icon.active span:nth-child(1) {
