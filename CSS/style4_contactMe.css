@@ -1,0 +1,96 @@
+/*=======================================
+CONTACT ME
+========================================*/
+
+.contact-me {
+    /* background: url(../Images/bg-1.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0s linear;
+    transition-property: background-position;
+    height: 84vh;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: #252934;
+}
+
+.contact-me-title {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-size: 6em;
+    margin-top: 0.5em;
+}
+
+.email-button {
+    /* padding: 2em 8em; */
+    text-align: center;
+    justify-content: center;
+    background: #252934;
+    border: #E31B6D 2px solid;
+    border-radius: 10px;
+    font-size: 1.625em;
+    position: absolute;
+    width: 20%;
+    height: 12%;
+    padding: 1.2em 0;
+    cursor: pointer;
+    left: 40vw;
+    margin-top: 15vh;
+    text-decoration: none;
+    color: white;
+}
+
+.email-button:hover,
+.email-button:focus {
+    background: rgba(0, 0, 0, 0.678);
+    color: #f8f8f8;
+}
+
+/*=======================================
+FOOTER
+========================================*/
+
+footer {
+    background-color: #1B242F;
+    /* width: 100vw; */
+    height: 16vh;
+    margin: 0;
+    padding: 0;
+}
+
+.arrow-up {
+    position: relative;
+    font-size: 4em;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+    /* color: #E31B6D; */
+    color: white;
+    transition: ease-in-out 20ms;
+    top: -30px;
+}
+
+.arrow-up:hover,
+.arrow-up:focus {
+    color: #E31B6D;
+}
+
+.arrow-up:active {
+    -webkit-animation: changingColor2 10s;
+    animation: changingColor2 ease-in-out 4s;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+
+@keyframes changingColor2 {
+  0% {
+      color: #E31B6D;
+  }
+  100% {
+      color: white;
+  }
+}

@@ -1,144 +1,109 @@
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Portfolio of Gowthaman Ravindrathas - designer and developer specialized in designing web and mobile interfaces.">
-        <meta name="keywords" content="webdesign, web development, UX, UI, iPhone apps, iPad apps, Branding, graphic design">
-        <meta name="author" content="Gowthaman Ravindrathas">
-        <link href="./Images/tab-blue.png" type="image/x-icon" rel="shortcut icon">
-        <!--Frameworks-->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="./JS/jquery-3.3.1.js"></script>
-        <script src="./Frameworks/jquery-ui.min.js"></script>
-        <!--CSS-->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="./CSS/stylesheet0.css">
-        
-        <!--JS-->
-        <script src="./JS/script.js"></script>
-        <script src="./JS/parallax.js"></script>
-        <script src="./JS/scroll.js"></script>
-        <script src="./JS/up_button.js"></script>
-        <title>Gowthaman Ravindrathas</title>
-    </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Portfolio of Gowthaman Ravindrathas - designer and developer specialized in designing web and mobile interfaces.">
+    <meta name="keywords" content="webdesign, web development, UX, UI, iPhone apps, iPad apps, Branding, graphic design">
+    <meta name="author" content="Gowthaman Ravindrathas">
+    <link href="./Images/logo-pink-black.png" type="image/x-icon" rel="shortcut icon">
+    <title>Gowthaman Ravindrathas</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./CSS/style0_main.css">
+    <link rel="stylesheet" href="./CSS/style1_popdownbar.css">
+    <link rel="stylesheet" href="./CSS/style2_navarrows.css">
+    <link rel="stylesheet" href="./CSS/style3_loadingScreen.css">
+    <link rel="stylesheet" href="./CSS/style4_contactMe.css">
+    <link rel="stylesheet" href="./CSS/starBg.css">
+    <!--JS-->
+    <script src="./JS/jquery.js"></script>
+    <script src="./JS/script.js"></script>
+    <script src="./JS/parallax.js"></script>
+    <script src="./JS/changeTitle.js"></script>
+    <script src="./JS/scroll.js"></script>
+</head>
 
-    <body>
-        <div id="load-screen">
-            <div class="container2">
-                <div class="part"></div>
-                <div class="part"></div>
-                <div class="part"></div>
-                <div class="part"></div>
-                <div class="part"></div>
-                <h1>Loading Portfolio</h1>
-            </div>
-            
+<body>
+    <div id="load-screen">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+
+    <header id="home">
+        <div class="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
 
-        <header class="parallax-bg">
-            <section class="navbox" id="home">
+        <div class="popdown-bar">
+            <img src="./Images/logo-pink-black.png" alt="logo" class="logo">
+            <div class="menu-color-bar"></div>
 
-                <div class="menu-icon">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a class ="nav-button" href="#home"><div class="nav-text"><i class="fas fa-home"></i> Home</div></a></li>
+                    <li><a class ="nav-button" href="#aboutme"><div class="nav-text"><i class="fas fa-user"></i> About Me</div></a></li>
+                    <li><a class ="nav-button" href="#myportfolio"><div class="nav-text"><i class="fas fa-code"></i> My Portfolio</div></a></li>
+                    <li><a class ="nav-button" href="#contact-me"><div class="nav-text"><i class="fas fa-envelope"></i> Contact Me</div></a></li>
+                </ul>
+            </nav>
+        </div>
 
-                <div class="popdown-bar">
-                    <img src="./Images/tab-blue.png" alt="logo" class="logo">
-                    <nav class="navbar">
-                        <ul>
-                            <li><a class ="nav-button" href="#home"><i class="fas fa-home"></i> Home</a></li>
-                            <li><a class ="nav-button" href="#aboutme"><i class="fas fa-user"></i> About Me</a></li>
-                            <li><a class ="nav-button" href="#myportfolio"><i class="fas fa-code"></i> My Portfolio</a></li>
-                            <li><a class ="nav-button" href="#contact-me"><i class="fas fa-envelope"></i> Contact Me</a></li>
-                        </ul>
-                    </nav>
-                </div>
+        <!-- =================== -->
+        <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+        <div id='stars'></div>
+        <div id='stars2'></div>
+        <div id='stars3'></div>
+        <!-- =================== -->
+        <div class="header-shape0 parallax-bg">
+            <h1 class="title">
+                <div class="jstext">
+                    <br id="brName">
+                </div><br>
+            </h1>
+        </div>
+        <div class="header-half"></div>
 
-            </section>
+        <a href="#aboutme" class="arrow-down">
+            <i class="fas fa-chevron-circle-down" href="#aboutme"></i>
+        </a>
+    </header>
 
-            <section class="main" id="home">
-                <div class="intro">
-                    <h1 class="sidetext">HELLO<span>.0</span></h1>
-                    <h1 class="info">I'm <br><span>Gowtham Ravindrathas</span></h1>
-                </div>
-                <div class="arrow1 bounce">
-                    <a class="a fas fa-angle-down" href="#aboutme"></a>
-                </div>
+    <section class="about-me" id="aboutme">
+        <h2 class="about-me-text">
+            Hi, I'm<span style="color: #04C2C9;"> Gowtham Ravindrathas</span>. <br>A student looking to improve and apply my existing web developing knowleadge! 
+        </h2>
+        <a href="#myportfolio">
+            <div class="about-me-shape0"></div>
+        </a>
+    </section>
 
-            </section>
-        </header>
+    <!-- <section class="my-portfolio" id="myportfolio">
+            <h1 class="contact-me-title" style="color:#04C2C9;">PORTFOLIO<span style="color:#E31B6D;">.</span></h1>
 
-        <section class="about-me" id="aboutme">
-            <h1 class="sidetext2">ABOUT ME<span>.1</span></h1>
-            <div class="t-about-me">
-                <i class="fas fa-user-graduate" style="font-size: 30px;"></i>
-                I am a first year Computer Science student at University of Bristol.
-                <br>
-                Seeking internship or research opportunity that will allow me to utilise my problem-solving skills and attention to detail to further develop my abilities in the field of computer science.
-            </div>
+    </section> -->
 
-            <!--div class="profile-pic">pic</div-->
+    <section class="contact-me" id="contact-me">
+        <h1 class="contact-me-title">CONTACT ME<span style="color:#E31B6D;">.</span></h1>
+        <h2 style="margin-top: 2em;">OK, LET'S CREATE<br>SOMETHING AWESOME!</h2>
+        <a href="mailto:gowtham4n@gmail.com">
+        <div class="email-button"><i class="fas fa-paper-plane" style="margin-right: 5px;"></i> GET IN TOUCH</div>
+        </a>
+    </section>
 
-            <div class="arrow1 bounce">
-                <a class="a fas fa-angle-down" href="#myportfolio"></a>
-            </div>
-
-        </section>
-
-        <section class="my-portfolio parallax-bg" id="myportfolio">
-            <h1 class="sidetext3">MY PORTFOLIO<span>.2</span></h1>
-
-            <div class="portfolio-grid">
-                <div class="portfolio-item medium"></div>
-                <div class="portfolio-item large"></div>
-                <div class="portfolio-item medium"></div>
-                <div class="portfolio-item medium"></div>
-                <div class="portfolio-item "></div>
-            </div>
-
-            <div class="arrow2 bounce">
-                <a class="a fas fa-angle-down" href="#contact-me"></a>
-            </div>
-        </section>
-        
-        <section class="contact-me" id="contact-me">
-            <h1 class="sidetext4">CONTACT ME<span>.3</span></h1>
-
-            <form action="#" class="form">
-                <b style="color:white;">YOUR NAME:</b>
-                <br>
-                <input class ="inputs" type="text" name="name" size="25" required></input>
-                <br>
-                <b style="color:white;">EMAIL:</b>
-                <br>
-                <input type="email" name="email" class="inputs" size="25" required>
-                <br>
-                <b style="color:white;">YOUR MESSAGE:</b>
-                <br>
-                <textarea id ="para1" class ="inputs" name="message" rows="8" cols="32" maxlength="400" placeholder="  Write your message here..."></textarea>
-                <br>
-                <input type="submit" class="button-style" value="SUBMIT " required/>
-            </form>
-            
-            <div class="arrow2 bounce">
-                <a class="a fas fa-angle-up" href="#home"></a>
-            </div>
-
-            <a href="#footer"><div class="slant-div"></div></a>
-        </section>
-        
-        <footer class="footer" id="footer">
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-twitter"></a>
-            <a href="#" class="fa fa-google"></a>
-            <a href="#" class="fa fa-linkedin"></a>
-            <a href="#" class="fa fa-instagram"></a>
-            <br>
-            <b class="footer-text">© 2018 GOWTHAMAN RAVINDRATHAS . MADE IN UNITED KINGDOM</b>
-
-        </footer>
-    </body>
+    <footer class="footer">
+        <a href="#home" class="arrow-up">
+            <i class="fas fa-chevron-circle-up" href="#home"></i>
+        </a>
+        <div style="margin-bottom: 1vh; overflow: hidden;">GOWTHAMAN RAVINDRATHAS  <span style="color:#E31B6D; margin-left: 5px;">© 2018</span></div>
+    </footer>
+    
+</body>
 </html>

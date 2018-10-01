@@ -1,0 +1,132 @@
+/*---------------------------------------------------------*/
+/*--------Scroll down arrow---------*/
+/*---------------------------------------------------------*/
+.a:hover,
+.a:focus {
+  -webkit-animation: changingColor 10s;
+  animation: changingColor ease-in-out 4s;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+@keyframes changingColor {
+  0% {
+      color: #000000
+  }
+  100% {
+      color: #ffffff
+  }
+}
+
+.a {
+    color: white;
+    text-decoration: none;
+    font-size: 4.5em;
+  }
+.arrow1 {
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    padding: 0;
+    z-index: 100;
+    /* width: 100vw; */
+    top: 87vh;
+    /* width: 100vw; */
+    overflow: hidden;
+}
+
+.arrow2 {
+  text-align: center;
+  margin: 0;
+  position: absolute;
+  padding: 0;
+  z-index: 100;
+  /* width: 100vw; */
+  top: 187vh;
+  /* width: 100vw; */
+  overflow: hidden;
+}
+
+.arrow3 {
+  text-align: center;
+  margin: 0;
+  position: absolute;
+  padding: 0;
+  z-index: 100;
+  /* width: 100vw; */
+  top: 287vh;
+  /* width: 100vw; */
+  overflow: hidden;
+}
+
+.arrow4 {
+  text-align: center;
+  margin: 0;
+  position: absolute;
+  padding: 0;
+  z-index: 100;
+  /* width: 100vw; */
+  top: 387vh;
+  /* width: 100vw; */
+  overflow: hidden;
+}
+  
+.bounce {
+-webkit-animation: bounce 2s infinite;
+animation: bounce 2s infinite;
+}
+@-webkit-keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    }
+    40% {
+      -webkit-transform: translateY(-30px);
+              transform: translateY(-30px);
+    }
+    60% {
+      -webkit-transform: translateY(-15px);
+              transform: translateY(-15px);
+    }
+}
+  @keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    40% {
+      -webkit-transform: translateY(-30px);
+              transform: translateY(-30px);
+    }
+    60% {
+      -webkit-transform: translateY(-15px);
+              transform: translateY(-15px);
+    }
+  }
+
+/*---*/
+/* .a:hover,
+.a:focus {
+    color: cornflowerblue;
+} */
+
+/* .a {
+    color: white;
+    text-decoration: none;
+    font-size: 4.5em;
+  }
+.arrow2 {
+    text-align: center;
+    margin: 0;
+    position: relative;
+    padding: 0;
+    z-index: 10;
+} */
