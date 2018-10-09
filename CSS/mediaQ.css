@@ -172,9 +172,10 @@
 
 @media(max-width: 500px) {
     .about-me-text {
-        font-size: 2.5em;
+        font-size: 2.3em;
         width: 80%;
-        margin-top: 16vh;
+        margin-top: 12vh;
+        margin-left: 1em;
     }
 
     .about-me-shape0 {
@@ -187,7 +188,8 @@
     .about-me-text {
         font-size: 2em;
         width: 80%;
-        margin-top: 16vh;
+        margin-top: 12vh;
+        margin-left: 1em;
     }
 
     .about-me-shape0 {
