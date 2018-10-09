@@ -106,8 +106,8 @@
     }
 
     .jstext {
-        padding-top: 12.5vh;
-        font-size: 12vw;
+        padding-top: 10vh;
+        font-size: 10vw;
     }
 }
 
@@ -124,9 +124,15 @@
         margin-left: 4vw;
         margin-right: 2vw;
         padding-left: 0;
-        padding-right: 0;
-        padding-top: 16vh;
-        font-size: 14vw;
+        padding-right: 1vw;;
+        padding-top: 12vh;
+        font-size: 12vw;
+    }
+}
+
+@media(max-width: 500px) {
+    .arrow-down {
+        top: 75vh;
     }
 }
 
@@ -166,7 +172,7 @@
 
 @media(max-width: 500px) {
     .about-me-text {
-        font-size: 2.8em;
+        font-size: 2.5em;
         width: 80%;
         margin-top: 16vh;
     }
