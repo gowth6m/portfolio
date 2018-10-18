@@ -69,9 +69,9 @@ function writing(text){
                 forward = false;
             }
 
-            if(j === lengthSentence-2){
-                $(".afterTyping").one().addClass("onScreen");
-            }
+            // if(j === lengthSentence-2){
+            //     $(".afterTyping").one().addClass("onScreen");
+            // }
 
             if( j === lengthSentence-1 && forward){
                 interval = 2000;

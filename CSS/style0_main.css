@@ -164,6 +164,10 @@ h1 {
     padding: 0;
 }
 
+#myName {
+    color: #04C2C9;
+}
+
 /*=======================================
 BLINKER 
 ========================================*/
@@ -294,6 +298,16 @@ SECTION 2
   100% {
       color: #04C2C9;
   }
+}
+
+.d-arrow {
+    top: 2vh;
+    font-size: 20vw;
+    position: absolute;
+    color: #f8f8f8;
+    overflow: hidden;
+    left: 0;
+    right: 0;
 }
 
 /*=======================================
