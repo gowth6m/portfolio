@@ -1,12 +1,10 @@
 /*=======================================
-GLOBALS 
+GLOBALS
 ========================================*/
 var sections = [
     {	sentence: " is a passionate developer based in the UK",
     },
     {	sentence: " is a lover of learning new things",
-    },
-    {	sentence: " is studying at University of Bristol",
     },
     {	sentence: " is looking for internships",
     },
@@ -34,14 +32,14 @@ var interval = 50;
 var opening = false;
 
 /*=======================================
-TYPING 
+TYPING
 ========================================*/
 function writing(text){
     lengthSentence = sections[i].sentence.length;
     var body = $("body");
 
     if(!opening){ // first part
-        setTimeout(function(){	
+        setTimeout(function(){
             if(k < beginning.length){
                 if(beginning[k] === "<"){
                     currentPart += ' <br id="brName">';
@@ -50,7 +48,7 @@ function writing(text){
                 currentPart += beginning[k];
                 text.html(currentPart);
                 k++;
-                writing(text);			
+                writing(text);
             }
 
             else if(k === (beginning.length)){
@@ -81,7 +79,7 @@ function writing(text){
                 if(sections[i].sentence[j] === "&"){
                     currentPart += "<strong>";
                 }
-                
+
                 else if(sections[i].sentence[j] === "%"){
                     currentPart += "</strong>";
                 }
@@ -101,7 +99,7 @@ function writing(text){
                     currentPart = currentPart.slice(0, - 9);
                 }
                 else{
-                    currentPart = currentPart.slice(0, - 1); 
+                    currentPart = currentPart.slice(0, - 1);
                 }
                 text.html(currentPart);
                 j--;
@@ -131,6 +129,3 @@ $(document).ready(function(){
     }, firstTimer);
 
 });
-
-
-
