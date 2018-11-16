@@ -168,6 +168,14 @@ h1 {
     color: #04C2C9;
 }
 
+.my-pic img {
+    height: 60vh;
+    width: auto;
+    margin-top: 8vh;
+    margin-left: 5vw;
+    margin-bottom: 10vh;
+    position: absolute;
+}
 /*=======================================
 BLINKER 
 ========================================*/
