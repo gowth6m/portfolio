@@ -47,6 +47,7 @@ HEADER
     left: 5vw;
     position: absolute;
     z-index: 10;
+    transition: 0s ease;
 }
 
 .intro-about-me span a {

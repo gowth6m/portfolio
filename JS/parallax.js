@@ -11,6 +11,10 @@ function parallax() {
 
     $('.parallax-bg3').css('letter-spacing' +(wScroll*0.8)+'px')
 
+    $('.plax').css('transform', 'translate(0px,+'+(wScroll*0.5)+'px')
+    $('.plax2').css('transform', 'translate(0px,+'+(wScroll*0.3)+'px')
+    $('.plax3').css('transform', 'translate(0px,-'+(wScroll*0.01)+'px')
+
     // if(wScroll > $('.large-window').offset().top - $(window).height()) {
     //     $('.large-window').css('background-position','center '+ (wScroll- $('.large-window').offset().top - 100));
     //     var opacity = (wScroll - $('.large-window').offset().top+ 400) / (wScroll / 4)

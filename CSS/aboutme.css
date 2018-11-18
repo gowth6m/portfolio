@@ -75,6 +75,7 @@
     }
 
     .about-me-img {
+        transition: 0s ease;
         width: calc(50vw);
         height: auto;
         position: absolute;
