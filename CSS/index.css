@@ -1,0 +1,56 @@
+/*=======================================
+OVERALL CSS 
+========================================*/
+:root {
+    --main-bg-grey: #222222;
+    --main-pink: #E31B6D;
+    --main-white: #f8f8f8;
+    --main-blue: #04C2C9;
+}
+
+* {
+    box-sizing: border-box;
+    transition: all ease-in-out 200ms;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,900,300');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+body,html {
+    text-align: center;
+    height: 100%;
+    color: var(black);
+    font-family: 'Open Sans', sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    margin: 0;
+    padding: 0;
+    /* -webkit-animation: changingBgColor 30s infinite;
+    animation: changingBgColor ease-in-out 20s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate; */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    margin: 0 auto;
+    /* max-width: 1000px; */
+}
+
+.container-strict {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.wrapper {
+    margin: 0 auto;
+    justify-items: center;
+    justify-content: center;
+}
+
+

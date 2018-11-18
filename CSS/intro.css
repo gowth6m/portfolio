@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Megrim|Unica+One');
+
+:root {
+    --main-bg-grey: #252934;
+    --second-bg-grey: #1c1e26;
+    --third-bg-grey: #3d3d3d;
+    --main-pink: #E31B6D;
+    --main-white: #f8f8f8;
+    --main-blue: #04C2C9;
+}
+
+/*=======================================
+HEADER 
+========================================*/
+.header-bar{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+    align-content: center;
+    position: fixed;
+    z-index: 100;
+    /* background-color: rgba(26, 26, 26, 0.8); */
+    background-color: #222222d0;
+    /* height: 9vh; */
+    transition: opacity 500 ease-in-out;
+}
+
+.header-bar-active {
+    height: 9vh;
+}
+
+.intro {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--second-bg-grey);
+    overflow: hidden;
+}
+
+.intro-about-me {
+    color: var(--main-white);
+    font-size: calc(3vw + 2vh);
+    font-family: 'Megrim', cursive;
+    letter-spacing: 3px;
+    top: 40vh;
+    right: 5vw;
+    left: 5vw;
+    position: absolute;
+    z-index: 10;
+}
+
+.intro-about-me span a {
+    font-weight: 900;
+    text-decoration: none;
+    color: var(--main-white);
+    transition: all ease-in-out 500ms;
+}
+
+.intro-about-me span a:hover,
+.intro-about-me span a:focus {
+    letter-spacing: 6px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 576px) {
+    .intro-about-me {
+        color: var(--main-white);
+        font-size: calc(3vw + 4vh);
+        font-family: 'Megrim', cursive;
+        letter-spacing: 3px;
+        top: 36vh;
+        right: 5vw;
+        left: 5vw;
+        position: absolute;
+        z-index: 10;
+    }
+}

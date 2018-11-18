@@ -1,0 +1,67 @@
+:root {
+    --main-bg-grey: #222222;
+    --main-pink: #E31B6D;
+    --main-white: #f8f8f8;
+    --main-blue: #04C2C9;
+}
+
+.container-portfolio {
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    align-content: center;
+    align-items: center;
+}
+
+.portfolio {
+    height: 100vh;
+    background-color: var(--main-bg-grey);
+    overflow: hidden;
+}
+
+.portfolio-title {
+    font-size: calc(4vw + 2vh);
+    font-weight: 900;
+    position: absolute;
+    top: 8vh;
+    color: var(--main-white);
+}
+
+.flex-container {
+    padding: 0;
+    margin: 0;
+    top: 22vh;
+    position: absolute;
+    list-style: none;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.flex-item {
+    /* background: tomato; */
+    /* padding: 5px; */
+    width: 30vw;
+    height: 30vh;
+    /* margin: 2px; */
+    /* margin: 2px; */
+    line-height: 150px;
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+    border: #ffffff solid 2px;
+    background-color: #04C2C9;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.712), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+
+
+
+
