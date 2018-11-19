@@ -8,20 +8,23 @@
 }
 
 .container-about {
-    max-width: 1400px;
+    /* max-width: 1600px; */
     margin: 0 auto;
     position: relative;
     margin-left: 5vw;
     margin-right: 5vw;
     align-content: center;
     align-items: center;
+    max-width: 2000px;
+    margin: 0 auto;
+    float: none;
 }
 
 .about-me {
+    align-content: center;
     height: 100vh;
     overflow: hidden;
     width: 100vw;
-    margin: 0;
     padding: 0;
 }
 
@@ -49,7 +52,8 @@
     height: auto;
     position: absolute;
     top: 25vh;
-    right: 0;
+    /* left: 60vw; */
+    right: 0vw;
     background-color: var(--main-blue);
     border-radius: 50%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.404), 0 6px 20px 0 rgba(0, 0, 0, 0.301);

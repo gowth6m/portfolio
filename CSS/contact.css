@@ -24,6 +24,9 @@
     margin-right: 5vw;
     align-content: center;
     align-items: center;
+    max-width: 2000px;
+    margin: 0 auto;
+    float: none;
 }
 
 .contact-title {
@@ -62,6 +65,7 @@
     vertical-align: middle;
     overflow: hidden;
     font-size: calc(1vw + 2vh);
+    
 }
 
 .container-contact a:hover,

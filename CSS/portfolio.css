@@ -5,6 +5,11 @@
     --main-blue: #04C2C9;
 }
 
+.container-margin {
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
 .container-portfolio {
     max-width: 1400px;
     margin: 0 auto;
@@ -13,6 +18,11 @@
     margin-right: 5vw;
     align-content: center;
     align-items: center;
+    max-width: 2000px;
+    margin: 0 auto;
+    float: none;
+    margin-left: 5vw;
+    margin-right: 5vw;
 }
 
 .portfolio {
