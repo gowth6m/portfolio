@@ -55,12 +55,39 @@ $(document).ready(function() {
             $(".header-bar").addClass("header-bar-active").fadeIn(1000);
             // console.log("test");
         }
-        // else if($(window).scrollTop() > (aboutme.top + 200)) {
-        //     $(".header-bar").removeClass("header-bar-active").fadeOut(1000);
-        //     console.log("test");
-        // }
         else {
             $(".header-bar").removeClass("header-bar-active").fadeOut(1000);
+        }
+    });
+
+    $(window).on('scroll', function() {
+        var aboutmetitle = $('.about-me-title').offset().top/2;
+        var aboutmetext = $('.about-me-text').offset().top;
+
+        if($(window).scrollTop() > aboutmetitle) {
+            $(".about-me-title").removeClass("scroll-fade");
+            $(".about-me-text").removeClass("scroll-fade");
+            $(".about-me-img").removeClass("scroll-in");
+            // console.log("test");
+        }
+        else {
+            $(".about-me-title").addClass("scroll-fade");
+            $(".about-me-text").addClass("scroll-fade");
+            $(".about-me-img").addClass("scroll-in");
+        }
+    });
+
+    $(window).on('scroll', function() {
+        var contacttitle = $('.contact-title').offset().top/1.25;
+    
+        if($(window).scrollTop() > contacttitle) {
+            $(".contact-title").removeClass("scroll-fade");
+            $(".contact-text").removeClass("scroll-fade");
+            // console.log("test");
+        }
+        else {
+            $(".contact-title").addClass("scroll-fade");
+            $(".contact-text").addClass("scroll-fade");
         }
     });
 })
@@ -71,17 +98,3 @@ $(document).ready(function() {
 //     var load_screen = document.getElementById("load-screen");
 //     document.body.removeChild(load_screen);
 // })
-
-// $(function() {
-//     $('.menu-icon').hover(function() {
-//         $('.menu-icon span').css('margin', '0.8em');
-//     }, function() {
-//         $('.menu-icon span').css('margin', '0.8em');
-//     });
-// });
-
-// $(document).ready(function(){
-//     $(".menu-icon").mouseover(function(){
-//         $(".menu-icon span").css("margin", "0.8em");
-//     });
-// });

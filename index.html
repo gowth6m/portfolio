@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="./CSS/aboutme.css">
     <link rel="stylesheet" href="./CSS/portfolio.css">
     <link rel="stylesheet" href="./CSS/contact.css">
+    <link rel="stylesheet" href="./CSS/animations.css">
     <!--JS-->
     <script src="./JS/jquery.js"></script>
     <script src="./JS/script.js"></script>
@@ -28,6 +29,7 @@
 </head>
 
 <body>
+<div class="overall-container">
     <section class="intro" id="home">
         <div class="container">
             <header class="header">
@@ -61,13 +63,13 @@
 
     <section class="about-me" id="about-me">
         <div class="container-about">
-            <div class="about-me-title">ABOUT ME<span style="color:#E31B6D;">.</span></div>
-            <div class="about-me-text">I'm Gowtham, a 19 year old student passionate about programming and dabbling in design.<br><br>
+            <div class="about-me-title scroll-fade">ABOUT ME<span style="color:#E31B6D;">.</span></div>
+            <div class="about-me-text scroll-fade">I'm Gowtham, a 19 year old student passionate about programming and dabbling in design.<br><br>
                 I love making user & browser-friendly websites and web-apps, and am currently delving into software development.<br><br>
                 Check out my <a href="#myportfolio">work</a> below or get in <a href="#contact-me">contact</a> now.<br><br>
                 You can also check out my <a href="https://github.com/gowtham4n" target="_blank">GitHub</a>.
             </div>
-            <img class="about-me-img plax3" src="./Images/gowtham_square.png" alt="">
+            <img class="about-me-img scroll-in" src="./Images/gowtham_square.png" alt="">
         </div>
     </section>
 
@@ -87,8 +89,8 @@
 
     <section class="contact" id="contact-me">
         <div class="container-contact">
-            <div class="contact-title">CONTACT ME<span style="color:#E31B6D;">.</span></div>
-            <h2 style="font-size: calc(1.8vw + 2vh); position: absolute; top: 28vh; color: #04C2C9; right: 0; left: 0;">OK, LET'S CREATE<br>SOMETHING AWESOME!</h2>
+            <div class="contact-title scroll-fade">CONTACT ME<span style="color:#E31B6D;">.</span></div>
+            <h2 class="contact-text scroll-fade" style="transition: all 1.5s ease; font-size: calc(1.8vw + 2vh); position: absolute; top: 28vh; color: #04C2C9; right: 0; left: 0;">OK, LET'S CREATE<br>SOMETHING AWESOME!</h2>
             <a href="mailto:gowtham4n@gmail.com"><i class="fas fa-paper-plane" style="margin-right: 5px;"></i> GET IN TOUCH</a>
         </div>
     </section>
@@ -101,5 +103,6 @@
             <div style="position: absolute; left: 0; right: 0; overflow: hidden;">GOWTHAMAN RAVINDRATHAS  <span style="color:#E31B6D; margin-left: 5px;">© 2018</span></div>
         </div>
     </footer>
+</div>
 </body>
 </html>

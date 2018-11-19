@@ -20,6 +20,9 @@
 .about-me {
     height: 100vh;
     overflow: hidden;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
 }
 
 .about-me-title {
@@ -27,6 +30,7 @@
     font-weight: 900;
     position: absolute;
     top: 12vh;
+    transition: all 1.5s ease;
 }
 
 .about-me-text {
@@ -37,6 +41,7 @@
     top: 25vh;
     right: 25vw;
     font-weight: 300;
+    transition: all 1.5s ease;
 }
 
 .about-me-img {
@@ -48,6 +53,7 @@
     background-color: var(--main-blue);
     border-radius: 50%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.404), 0 6px 20px 0 rgba(0, 0, 0, 0.301);
+    transition: all 1.5s ease;
 }
 
 .about-me-text a {
@@ -79,7 +85,7 @@
         width: calc(50vw);
         height: auto;
         position: absolute;
-        top: 65vh;
+        top: 62vh;
         right: 30vw;
         left: 20vw;
         background-color: var(--main-blue);

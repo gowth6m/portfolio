@@ -19,6 +19,9 @@
     height: 100vh;
     background-color: var(--main-bg-grey);
     overflow: hidden;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
 }
 
 .portfolio-title {

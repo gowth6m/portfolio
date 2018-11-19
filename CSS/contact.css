@@ -11,6 +11,9 @@
     height: 85vh;
     background-color: var(--fifth-grey);
     overflow: hidden;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
 }
 
 .container-contact {
@@ -24,6 +27,7 @@
 }
 
 .contact-title {
+    transition: all 1.5s ease;
     right: 0;
     left: 0;
     font-size: calc(7vw + 2vh);
@@ -38,13 +42,13 @@
 }
 
 .container-contact a {
+    font-weight: 500;
     color: white;
     text-decoration: none;
     margin: 0 auto;
     text-align: center;
     justify-content: center;
     background: #252934;
-    /* border: #E31B6D 2px solid; */
     border: white 2px solid;
     border-radius: 10px;
     position: absolute;
@@ -77,6 +81,9 @@
     height: 15vh;
     background-color: var(--fourth-grey);
     color: var(--main-white);
+    width: 100vw;
+    /* overflow-x: hidden; */
+    /* overflow: hidden; */
 }
 
 .arrow-up {

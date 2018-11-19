@@ -35,6 +35,8 @@ HEADER
     height: 100vh;
     background-color: var(--second-bg-grey);
     overflow: hidden;
+    margin: 0;
+    padding: 0;
 }
 
 .intro-about-me {
