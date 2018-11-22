@@ -72,7 +72,29 @@
     border: #ffffff solid 2px;
     background-color: #04C2C9;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.712), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
+}
+
+.slant-div-top {
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0vh;
+    height: 30vh;
+    width: 100vw;
+    background-color: var(--fifth-grey);
+    transform: skew(-3deg) rotate(-3deg);
+}
+
+.slant-div-bot {
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 95vh;
+    height: 30vh;
+    width: 100vw;
+    background-color: var(--fifth-grey);
+    transform: skew(2deg) rotate(2deg);
+}
 
 
 

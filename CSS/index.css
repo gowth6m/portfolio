@@ -26,10 +26,6 @@ body,html {
     margin: 0;
     padding: 0;
     max-width: 100vw;
-    /* -webkit-animation: changingBgColor 30s infinite;
-    animation: changingBgColor ease-in-out 20s infinite;
-    -webkit-animation-direction: alternate;
-    animation-direction: alternate; */
 }
 
 body {

@@ -26,6 +26,8 @@
     overflow: hidden;
     width: 100vw;
     padding: 0;
+    /* background-color: var(--main-white); */
+    background-color: var(--fifth-grey);
 }
 
 .about-me-title {
@@ -34,9 +36,11 @@
     position: absolute;
     top: 12vh;
     transition: all 1.5s ease;
+    color: white;
 }
 
 .about-me-text {
+    color: white;
     text-align: left;
     font-family: 'Courier New', Courier, monospace;
     font-size: calc(2vw + 1vh);
@@ -61,7 +65,8 @@
 }
 
 .about-me-text a {
-    color: black;
+    /* color: black; */
+    color: white;
     font-weight: 900;
 }
 
@@ -86,14 +91,20 @@
 
     .about-me-img {
         transition: 0s ease;
-        width: calc(50vw);
+        width: calc(45vw);
         height: auto;
         position: absolute;
-        top: 62vh;
+        top: 60vh;
         right: 30vw;
         left: 20vw;
         background-color: var(--main-blue);
         border-radius: 50%;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.404), 0 6px 20px 0 rgba(0, 0, 0, 0.301);
     }
+}
+
+.about-me .slant-div-bot {
+    top: 95vh;
+    background-color: var(--main-bg-grey);
+    transform: skew(-2deg) rotate(-2deg);
 }

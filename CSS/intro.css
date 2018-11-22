@@ -78,3 +78,29 @@ HEADER
         z-index: 10;
     }
 }
+
+.intro .slant-div-bot1 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    /* top: 94vh; */
+    top: 92vh;
+    height: 30vh;
+    width: 100vw;
+    /* background-color: var(--main-white); */
+    background-color: var(--fifth-grey);
+    transform: skew(-4deg) rotate(-4deg);
+}
+
+.intro .slant-div-bot2 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    /* top: 94vh; */
+    top: 92vh;
+    height: 30vh;
+    width: 100vw;
+    /* background-color: var(--main-white); */
+    background-color: var(--fifth-grey);
+    transform: skew(4deg) rotate(4deg);
+}

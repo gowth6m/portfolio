@@ -90,6 +90,20 @@ $(document).ready(function() {
             $(".contact-text").addClass("scroll-fade");
         }
     });
+
+    $(window).on('scroll', function() {
+        var contacttitle = $('.contact-title').offset().top/1.25;
+    
+        if($(window).scrollTop() > contacttitle) {
+            $(".contact-title").removeClass("scroll-fade");
+            $(".contact-text").removeClass("scroll-fade");
+            // console.log("test");
+        }
+        else {
+            $(".contact-title").addClass("scroll-fade");
+            $(".contact-text").addClass("scroll-fade");
+        }
+    });
 })
 
 
