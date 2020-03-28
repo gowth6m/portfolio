@@ -10,7 +10,7 @@
     margin-right: 5vw;
 }
 
-.container-portfolio {
+/* .container-portfolio {
     max-width: 1400px;
     margin: 0 auto;
     position: relative;
@@ -40,9 +40,9 @@
     position: absolute;
     top: 8vh;
     color: var(--main-white);
-}
+} */
 
-.flex-container {
+/* .flex-container {
     padding: 0;
     margin: 0;
     top: 22vh;
@@ -55,15 +55,11 @@
     display: flex;
     -webkit-flex-flow: row wrap;
     justify-content: space-around;
-}
+} */
 
-.flex-item {
-    /* background: tomato; */
-    /* padding: 5px; */
+/* .flex-item {
     width: 25vw;
     height: 25vh;
-    /* margin: 2px; */
-    /* margin: 2px; */
     line-height: 150px;
     color: white;
     font-weight: bold;
@@ -94,7 +90,7 @@
     width: 100vw;
     background-color: var(--fifth-grey);
     transform: skew(2deg) rotate(2deg);
-}
+} */
 
 
 
