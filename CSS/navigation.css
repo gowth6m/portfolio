@@ -61,7 +61,7 @@
     /* opacity: 0; */
     transform: translate3d(100vw, 0, 0) rotateY(90deg);
     /* transform: translate3d(100vw, -100vh, 0) rotateX(90deg) rotateY(90deg) rotateZ(90deg); */
-    transition: all ease-in-out 600ms;
+    transition: all ease-in-out 500ms;
 }
 
 .hidden-nav.active {
@@ -73,7 +73,7 @@
 
 /* NAV BUTTONS */
 .container-nav {
-    max-width: 1500px;
+    max-width: 80vw;
     margin: 0 auto;
 }
 
@@ -108,30 +108,37 @@
     color: white;
     font-size: calc(2vw + 2vh);
     background: url("../Images/what-the-hex-dark.png");
-    box-shadow: 10px 12px rgba(0, 0, 0, 0.95);
-    margin-left: 12vw;
-    margin-right: 12vw;
+    /* box-shadow: 10px 12px rgba(0, 0, 0, 0.95); */
+    margin-left: 5vw;
+    margin-right: 5vw;
     margin-top: calc(10vh - 2.5vw);
     transform: skew(-20deg);
-    transition: all ease-in-out 100ms;
-    letter-spacing: 4px;
+    /* transition: all ease-in-out 500ms; */
+    letter-spacing: 0.05vw;
+
+    -webkit-transition: color ease-in-out 500ms;
+    -moz-transition: color ease-in-out 500ms;
+    transition: color ease-in-out 500ms;
 }
 
 .nav-text {
     transform: skew(20deg);
-    transition: all ease-in-out 100ms;
+    transition: all ease-in-out 500ms;
 }
 
 .nav-bar li a:hover,
 .nav-bar li a:focus {
-    background: url("../Images/what-the-hex-grey.png");
-    letter-spacing: calc(0.5vh + 0.8vw);
-    box-shadow: 0 1px 8px 0 rgb(0, 0, 0), 0 8px 12px 0 rgba(0,0,0,0.19);
+    /* background: url("../Images/what-the-hex-grey.png"); */
+    background: var(--main-pink);
+    /* color: var(--main-pink); */
+    /* letter-spacing: calc(0.5vh + 0.8vw); */
+    /* box-shadow: 0 1px 8px 0 rgb(0, 0, 0), 0 8px 12px 0 rgba(0,0,0,0.19); */
 }
 
 .nav-bar li a:active {
-    /* transform: translate(-1px , -5px); */
+    transform: translate(-1px , -5px);
     transform: skew(-30deg);
+    /* color: var(--main-blue); */
 }
 
 /* ADDITIONAL DESIGN */

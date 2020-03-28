@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Megrim|Unica+One');
+@import url('https://fonts.googleapis.com/css?family=Erica+One&display=swap');
 
 :root {
     --main-bg-grey: #252934;
@@ -33,7 +34,7 @@ HEADER
 .intro {
     width: 100vw;
     height: 100vh;
-    background-color: var(--second-bg-grey);
+    /* background-color: var(--second-bg-grey); */
     overflow: hidden;
     margin: 0;
     padding: 0;
@@ -44,7 +45,7 @@ HEADER
     font-size: calc(3vw + 2vh);
     font-family: 'Megrim', cursive;
     letter-spacing: 3px;
-    top: 40vh;
+    top: 10vh;
     right: 5vw;
     left: 5vw;
     position: absolute;
@@ -55,14 +56,16 @@ HEADER
 .intro-about-me span a {
     font-weight: 900;
     text-decoration: none;
-    color: var(--main-white);
+    /* color: var(--main-white); */
+    color: var(--main-blue);
     transition: all ease-in-out 500ms;
 }
 
 .intro-about-me span a:hover,
 .intro-about-me span a:focus {
     letter-spacing: 6px;
-    color: rgba(255, 255, 255, 0.8);
+    /* color: rgba(255, 255, 255, 0.8); */
+    /* color: var(--main-pink); */
 }
 
 @media (max-width: 576px) {
@@ -71,7 +74,7 @@ HEADER
         font-size: calc(3vw + 4vh);
         font-family: 'Megrim', cursive;
         letter-spacing: 3px;
-        top: 36vh;
+        top: 25vh;
         right: 5vw;
         left: 5vw;
         position: absolute;
@@ -104,3 +107,25 @@ HEADER
     background-color: var(--fifth-grey);
     transform: skew(4deg) rotate(4deg);
 }
+
+.intro-hi-text {
+    font-size: calc(15vw + 10vh);
+    font: bold;
+    font-family: 'Erica One', cursive;
+    color: var(--main-white);
+    margin: 0;
+    padding: 0;
+}
+
+.intro-hi-text a {
+    color: var(--main-pink);
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* .intro-hi-text a:hover,
+.intro-hi-text a:focus{
+    color: var(--main-blue);
+    font-size: calc(16vw + 11vh);
+} */

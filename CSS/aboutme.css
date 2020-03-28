@@ -15,7 +15,7 @@
     margin-right: 5vw;
     align-content: center;
     align-items: center;
-    max-width: 2000px;
+    max-width: 80vw;
     margin: 0 auto;
     float: none;
 }
@@ -28,6 +28,7 @@
     padding: 0;
     /* background-color: var(--main-white); */
     background-color: var(--fifth-grey);
+    /* z-index: 1; */
 }
 
 .about-me-title {
@@ -79,7 +80,7 @@
 @media (max-width: 576px) {
     .about-me-text {
         text-align: left;
-        width: 90vw;
+        /* width: 90vw; */
         font-family: 'Courier New', Courier, monospace;
         font-size: calc(2vw + 1vh);
         position: absolute;

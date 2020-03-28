@@ -12,7 +12,7 @@ function parallax() {
     $('.parallax-bg3').css('letter-spacing' +(wScroll*0.8)+'px')
 
     $('.plax').css('transform', 'translate(0px,+'+(wScroll*0.5)+'px')
-    $('.plax2').css('transform', 'translate(0px,+'+(wScroll*0.3)+'px')
+    $('.plax2').css('transform', 'translate(0px,+'+(wScroll*0.2)+'px')
     $('.plax3').css('transform', 'translate(0px,+'+(wScroll*0.15)+'px')
     $('.plax4').css('transform', 'translate(0px,+'+(wScroll*0.55)+'px')
     $('.plax5').css('transform', 'translate(0px,+'+(wScroll*0.55)+'px')

@@ -37,18 +37,12 @@ $(document).ready(function() {
         setTimeout(function(){$(".menu-color-bar").toggleClass("active")},50);
     })
 
-    // function setParentTransition(id, prop, delay, style, callback) {
-    //     $(id).css({'-webkit-transition' : prop + ' ' + delay + ' ' + style});
-    //     $(id).css({'-moz-transition' : prop + ' ' + delay + ' ' + style});
-    //     $(id).css({'-o-transition' : prop + ' ' + delay + ' ' + style});
-    //     $(id).css({'transition' : prop + ' ' + delay + ' ' + style});
-    //     callback();
-    // }
+    // -------------------------------------
 
     $(window).on('scroll', function() {
         var aboutme = $('.about-me').offset();
         var about = aboutme.top - $(document).scrollTop() + 150;
-        var portfolio = $('.portfolio').offset().top - 500;
+        // var portfolio = $('.portfolio').offset().top - 200;
         // var port = portfolio.top - $(document).scrollTop() - 200;
 
         if($(window).scrollTop() > about) {
@@ -83,7 +77,7 @@ $(document).ready(function() {
         if($(window).scrollTop() > contacttitle) {
             $(".contact-title").removeClass("scroll-fade");
             $(".contact-text").removeClass("scroll-fade");
-            // console.log("test");
+            console.log("test");
         }
         else {
             $(".contact-title").addClass("scroll-fade");
@@ -91,19 +85,19 @@ $(document).ready(function() {
         }
     });
 
-    $(window).on('scroll', function() {
-        var contacttitle = $('.contact-title').offset().top/1.25;
+    // $(window).on('scroll', function() {
+    //     var contacttitle = $('.contact-title').offset().top/0.25;
     
-        if($(window).scrollTop() > contacttitle) {
-            $(".contact-title").removeClass("scroll-fade");
-            $(".contact-text").removeClass("scroll-fade");
-            // console.log("test");
-        }
-        else {
-            $(".contact-title").addClass("scroll-fade");
-            $(".contact-text").addClass("scroll-fade");
-        }
-    });
+    //     if($(window).scrollTop() > contacttitle) {
+    //         $(".contact-title").removeClass("scroll-fade");
+    //         $(".contact-text").removeClass("scroll-fade");
+    //         // console.log("test");
+    //     }
+    //     else {
+    //         $(".contact-title").addClass("scroll-fade");
+    //         $(".contact-text").addClass("scroll-fade");
+    //     }
+    // });
 })
 
 
