@@ -449,6 +449,11 @@ CONTACT CSS
     color: var(--green);
 }
 
+.contact-text {
+    max-width: 60vw;
+    margin: auto;
+}
+
 .contact-icons {
     width: 50vw;
     position: absolute;
@@ -466,4 +471,30 @@ CONTACT CSS
 .fa-icons:hover {
     cursor: pointer;
     color: var(--green);
+}
+
+.footer {
+    background-color: var(--green);
+    height: 10vh;
+    width: 100vw;
+    /* top: 50vh; */
+    bottom: 0;;
+    position: absolute;
+}
+
+.footer-text {
+    margin-top: 1rem;
+    font-size: var(--normal-font-size);
+    color: var(--black);
+    font-weight: 600;
+}
+
+@media screen and (max-width: 500px) {
+    .contact-text {
+        max-width: 90vw;
+    }
+
+    .contact-icons {
+        top: 50vh;
+    }
 }
