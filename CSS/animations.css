@@ -1,9 +1,0 @@
-.scroll-fade {
-    opacity: 0;
-    transform: translate3d(0, 0, 400px) rotateY(40deg);
-}
-
-.scroll-in {
-    opacity: 0;
-    transform: translate3d(400px, 0, 400px) rotateY(40deg);
-}

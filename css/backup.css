@@ -1,0 +1,512 @@
+/*====================================================
+OVERALL CSS 
+=====================================================*/
+:root {
+    --main-black: #171717;
+    --main-bg-grey: #222222;
+    --main-bg-grey2: #5e5e5e;
+    --main-pink: #E31B6D;
+    --main-white: #f8f8f8;
+    --main-blue: #04C2C9;
+}
+
+* {
+    box-sizing: border-box;
+    transition: all ease-in-out 200ms;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap');
+
+body,html {
+    text-align: center;
+    height: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    margin: 0;
+    padding: 0;
+    max-width: 100vw;
+	scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: var(--main-black);
+    color: var(--main-white);
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a{
+	text-decoration: none;
+	color:#17a2b8;
+}
+
+ul{
+	list-style: none;
+}
+
+.container-main {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.grid-wrapper {
+    margin: 0 auto;
+    max-width: 1520px;
+}
+
+.container {
+    overflow: hidden;
+}
+
+/*====================================================
+NAV CSS 
+=====================================================*/
+.navigation {
+    height: 10vh;
+    width: 100vw;
+    /* background: var(--main-blue); */
+    z-index: 100;
+    position: fixed;
+}
+
+.nav-links {
+    display: flex;
+    list-style-type: none;
+    width: 30%;
+    /* background-color: var(--main-blue); */
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    margin-left: auto;
+    margin-right: 20px;
+    text-transform: uppercase;
+}
+
+.nav-links a {
+    font-size: calc(1vh + 1vw);
+    /* font-size: 20px; */
+    text-decoration: none;
+    color: var(--main-white);
+    font-weight: 900;
+}
+
+.nav-links a:hover {
+    background-color: var(--main-pink);
+    font-size: calc(5px + calc(1vh + 1vw));
+    letter-spacing: 2px;
+}
+
+/* .nav-links a.active {
+    background-color: var(--main-pink);
+    font-size: calc(5px + calc(1vh + 1vw));
+    letter-spacing: 2px;
+} */
+
+@media screen and (max-width: 675px) {
+    .line {
+        width: 30px;
+        height: 4px;
+        background: var(--main-white);
+        margin: 5px;
+        transition: all 0.5s;
+    }
+
+    .navigation {
+        position: fixed;
+    }
+
+    .burger-menu {
+        position: fixed;
+        cursor: pointer;
+        right: 5%;
+        top: 5%;
+        transform: translate(-5%, -50%);
+        z-index: 2;
+    }
+
+    .nav-links {
+        position: fixed;
+        height: 100vh;
+        width: 100vw;
+        flex-direction: column;
+        clip-path: circle() (30px at 89% 5%);
+        -webkit-clip-path: circle(30px at 89% 5%);
+        transition: all 0.4s ease-out;
+        pointer-events: none;
+    }
+
+    .nav-links.open {
+        clip-path: circle(1200px at 89% 5%);
+        -webkit-clip-path: circle(1200px at 89% 5%);
+        pointer-events: all;
+        padding: 0;
+        background-color: var(--main-blue);
+    }
+
+    .nav-links a {
+        font-size: 5vh;
+    }
+
+    .nav-links li {
+        opacity: 1;
+    }
+
+    .l1.active {
+        -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+        transform: rotate(-45deg) translate(-8x, 8px);
+    }
+    
+    .l2.active {
+        opacity: 0;
+    }
+    
+    .l3.active {
+        -webkit-transform: rotate(45deg) translate(-5px, -6.5px);
+        transform: rotate(45deg) translate(-6.8px, -6.8px);
+    }
+}
+
+/*====================================================
+INTRO CSS 
+=====================================================*/
+p {
+    margin: 0;
+    padding: 0;
+    font-style: italic;
+    margin-right: 2em;
+}
+
+.introduction {
+    height: 100vh;
+    width: 100%;
+    font-size: calc(3vh + 2vw);
+    font-size: 2vmax;
+    text-align: left;
+    font-weight: 900;
+    overflow: hidden;
+    margin-right: 2em;
+    letter-spacing: -2px;
+    position: relative;
+    left: 0;
+    top: 0;
+    background-attachment: fixed;
+}
+
+.title {
+    position: relative;
+    top: 22vh;
+    left: 5vw;
+    text-transform: uppercase;
+    color: var(--main-blue);
+    font-size: calc(5vh + 5vw);
+    margin: 0;
+    padding: 0;
+    font-weight: 900;
+    transition: 0s ease;
+}
+
+.title span {
+    font-weight: 400;
+    letter-spacing: 0;
+}
+
+.title-text {
+    /* text-transform: uppercase; */
+    letter-spacing: 0;
+    font-family: "Open Sans", sans-serif;
+    position: relative;
+    top: 25vh;
+    left: 5vw;
+    margin-right: 5vw;
+    font-style: normal;
+    font-size: calc(2vh + 3vw);
+    transition: 0s ease;
+}
+
+.typed-text {
+    font-weight: normal;
+    color: var(--main-pink);
+}
+
+.typed-text-cursor {
+    font-weight: normal;
+    display: inline-block;
+    width: 3px;
+    background-color: white;
+    margin-left: 0.1rem;
+    animation: blink 1s infinite;
+}
+
+.typed-text-cursor.typing {
+    animation: none;
+}
+
+@keyframes blink {
+    0% {background-color: white;}
+    49% {background-color: white;}
+    50% {background-color: transparent;}
+    99% {background-color: transparent;}
+    100% {background-color: white;}
+}
+
+/* Scroll down arrow */
+.fa-arrow-down{
+    position: relative;
+    left: 48.5%;
+    top: 55vh;
+    font-size: 2vw;
+    color: var(--main-pink);
+    animation: animate 2s linear infinite;
+    cursor: pointer;
+}
+
+.fa-arrow-down:hover {
+    color: var(--main-blue) !important; 
+}
+
+@keyframes animate {
+    0% {
+        transform: translate(0, 0);
+    }
+    30% {
+        transform: translate(0, 10px);
+    }
+    50% {
+        transform: translate(0, -1px);
+    }
+    100% {
+        transform: translate(0, -1px);
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .fa-arrow-down {
+        display: none !important;
+    }
+
+    .title {
+        font-size: calc(5vh + 6vw);
+    }
+
+    .title-text {
+        font-size: calc(3vh + 4vw);
+        left: 2vw;
+        margin-left: 2vw;
+    }
+}
+
+
+/*====================================================
+PORTFOLIO CSS 
+=====================================================*/
+.portfolio {
+    height: auto;
+    width: 100%;
+    position: relative;
+    left: 0;
+    text-align: left;
+    overflow: hidden;
+}
+
+.title-portfolio {
+    font-size: calc(1.5vh + 2vw);
+    margin-left: 5vw;
+    margin-top: 5vh;
+    letter-spacing: -2x;
+    font-style: italic;
+    color: var(--main-pink);
+}
+
+.portfolio-grid {
+    margin-top: 5vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.portfolio-grid div {
+    flex-flow: row;
+    height: 18em;
+    width: 24em;
+    /* background-color: var(--main-blue); */
+    margin: 15px;
+    border: 5px solid var(--main-blue);
+}
+
+/* 1 */
+.portfolio-fade-in {
+    background-size: cover;
+    cursor: pointer;
+    text-align: center;
+    background-image: url(../assets/zombie_maze.gif);
+}
+
+.portfolio-fade-in h1 {
+    font-weight: 900;
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    color: var(--main-white);
+    margin: 50% auto;
+    /* font-size: 20px; */
+    background-color: var(--main-blue);
+    padding: 5px;
+}
+
+.portfolio-fade-in span {
+    text-transform: none;
+    font-style: italic;
+    color: #1717179d;
+    font-size: 1.5rem;
+    margin: 0em;
+    padding: 0;
+}
+
+/* 2 */
+.portfolio-fade-in-2 {
+    background-size: cover;
+    cursor: pointer;
+    text-align: center;
+    background-image: url(../assets/lift-demo.gif);
+}
+
+.portfolio-fade-in-2 h1 {
+    font-weight: 900;
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    color: var(--main-white);
+    margin: 50% auto;
+    /* font-size: 20px; */
+    background-color: var(--main-blue);
+    padding: 5px;
+}
+
+.portfolio-fade-in-2 span {
+    text-transform: none;
+    font-style: italic;
+    color: #1717179d;
+    font-size: 1.5rem;
+    margin: 0em;
+    padding: 0;
+}
+
+/* 3 */
+.portfolio-fade-in-3 {
+    background-size: cover;
+    cursor: pointer;
+    text-align: center;
+    background-image: url(../assets/test_gif.gif);
+}
+
+.portfolio-fade-in-3 h1 {
+    font-weight: 900;
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    color: var(--main-white);
+    margin: 50% auto;
+    /* font-size: 20px; */
+    background-color: var(--main-blue);
+    padding: 5px;
+}
+
+.portfolio-fade-in-3 span {
+    text-transform: none;
+    font-style: italic;
+    color: #1717179d;
+    font-size: 1.5rem;
+    margin: 0em;
+    padding: 0;
+}
+
+@media screen and (max-width: 450px) {
+    .title-portfolio {
+        font-size: calc(3vh + 3vw);
+    }
+}
+
+/*====================================================
+CONTACT CSS 
+=====================================================*/
+.contact-me {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    left: 0;
+}
+
+.title-contact-me {
+    font-size: calc(3vw + 2vh);
+    top: 5vh;
+    position: relative;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: "Open Sans", sans-serif;
+}
+
+.title-contact-me span{
+    color: var(--main-pink);
+}
+
+.contact-text {
+    position: relative;
+    margin: 0 auto;
+    top: 10vh;
+}
+
+.resume {
+    font-family: "Open Sans", sans-serif;
+    font-size: calc(1vw + 1vh);
+    width: 12vw;
+    font-weight: 400;
+    color: var(--main-black);
+    padding: 0.5em 1em 0.5em 1em;
+    align-content: space-around;
+    align-items: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    background: #04C2C9;
+    position: relative;
+    text-decoration: none;
+    border-radius: 2px;
+    margin: 0 auto;
+    top: 70vh;
+}
+
+.resume:hover {
+    box-shadow: 10px 10px var(--main-white);
+    color: var(--main-white);
+}
+
+@media screen and (max-width: 450px) {
+    .resume {
+        width: 40vw !important;
+        font-size: calc(1vw + 2vh);
+        top: 50vh !important; 
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .resume {
+        width: 30vw;
+        font-size: calc(1vw + 2vh);
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .resume {
+        width: 30vw;
+        font-size: calc(1vw + 2vh);
+        top: 70vh;
+    }
+}
