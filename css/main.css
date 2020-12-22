@@ -428,6 +428,22 @@ PORTFOLIO CSS
     }
 }
 
+.portfolio-button-view {
+    border: 2px solid var(--green);
+    color: var(--black);
+    background-color: var(--green);
+    font-weight: 900;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin: auto;
+}
+
+.portfolio-button-view:hover {
+    cursor: pointer;
+    border: 2px solid var(--orange);
+    background-color: var(--orange);
+}
+
 /*====================================================
 CONTACT CSS 
 =====================================================*/
