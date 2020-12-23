@@ -252,6 +252,7 @@ INTRO CSS
     top: 42vh;
     left: 5vw;
     color: var(--white);
+    text-align: left;
 }
 
 .fa-arrow-down {
@@ -424,7 +425,7 @@ PORTFOLIO CSS
 @media screen and (max-width: 500px) {
     .portfolio-gallery {
         grid-template-rows: minmax(75vh, 2fr); 
-        grid-template-columns: repeat(3, calc(100% - var(--gutter) * 2));
+        grid-template-columns: repeat(6, calc(100% - var(--gutter) * 2));
     }
 }
 
