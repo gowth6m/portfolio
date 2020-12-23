@@ -469,13 +469,14 @@ CONTACT CSS
 .contact-text {
     max-width: 60vw;
     margin: auto;
+    font-size: 1.4rem;
 }
 
 .contact-icons {
     width: 50vw;
     position: absolute;
     color: var(--white);
-    top: 40vh;
+    top: 60vh;
     left: 50%;
     margin-left: -25vw;
 }
@@ -509,9 +510,21 @@ CONTACT CSS
 @media screen and (max-width: 500px) {
     .contact-text {
         max-width: 90vw;
+        font-size: 1rem;
     }
 
     .contact-icons {
-        top: 50vh;
+        top: 55vh;
+    }
+}
+
+@media screen and (max-width: 666px) {
+    .contact-text {
+        max-width: 90vw;
+        font-size: 0.9rem;
+    }
+
+    .contact-icons {
+        top: 55vh;
     }
 }
