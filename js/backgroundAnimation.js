@@ -1,12 +1,14 @@
 
 // constants
-const COLOR_SPACE = "#cccccc";
-// const COLOR_STARS = "#00000036";
-// const COLOR_STARS = "rgba(0, 0, 0, 0.25)";
-const COLOR_STARS = "rgba(255, 255, 255, 0.2)";
+// const COLOR_SPACE = "#cccccc";
+// const COLOR_STARS = "rgba(255, 255, 255, 0.2)";
+const COLOR_SPACE = "#EADEDA";
+const COLOR_STARS = "rgba(153, 136, 136, 0.5)";
+
 const STAR_NUM = 100; // number of stars in the starfield
-const STAR_SIZE = 0.050; // max star size as a fraction of screen width
+const STAR_SIZE = 0.02; // max star size as a fraction of screen width
 const STAR_SPEED = 0.01; // fraction of screen width per second
+// const STAR_SIZE = 0.050;
 
 // set up the canvas and context
 var canvas = document.createElement("canvas");
@@ -21,16 +23,6 @@ var starSpeed = STAR_SPEED * canvas.width;
 var xv = starSpeed * randomSign() * Math.random();
 // Using Pythagoras' theorem, yv = sqrt(starSpeed^2 - xv^2)
 var yv = Math.sqrt(Math.pow(starSpeed, 2) - Math.pow(xv, 2)) * randomSign();
-// for (let i = 0; i < STAR_NUM; i++) {
-//     let speedMult = Math.random() * 1.5 + 0.5;
-//     stars[i] = {
-//         r: Math.random() * STAR_SIZE * canvas.width / 2,
-//         x: Math.floor(Math.random() * canvas.width),
-//         y: Math.floor(Math.random() * canvas.height),
-//         xv: xv * speedMult,
-//         yv: yv * speedMult
-//     }
-// }
 generateStars();
 
 function generateStars() {
