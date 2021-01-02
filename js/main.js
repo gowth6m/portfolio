@@ -67,6 +67,7 @@ const l3 = document.querySelector('.l3');
 const link1 = document.querySelector('.link1');
 const link2 = document.querySelector('.link2');
 const link3 = document.querySelector('.link3');
+const link4 = document.querySelector('.link4');
 
 burgerMenu.addEventListener('click', ()=> {
   navLinks.classList.toggle('open');
@@ -101,6 +102,17 @@ link2.addEventListener('click', () => {
   l3.classList.toggle('active');
 })
 link3.addEventListener('click', () => {
+  navLinks.classList.toggle('open');
+  links.forEach(link => {
+    link.classList.toggle('fade');
+  })
+
+  l1.classList.toggle('active');
+  l2.classList.toggle('active');
+  l3.classList.toggle('active');
+})
+
+link4.addEventListener('click', () => {
   navLinks.classList.toggle('open');
   links.forEach(link => {
     link.classList.toggle('fade');

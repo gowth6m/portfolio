@@ -3,22 +3,26 @@ OVERALL CSS
 =====================================================*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+:root {
+    --black: rgb(20, 20, 20);
+    --white: #f8f8f8;
+    --greyWhite: #cccccc;
+    --starColorTwo: rgba(0, 0, 0, 0.25);
+}
+
+:root {
+    --introContainer: var(--black);
+    --titleGowtham: var(--white);
+    --titleOther: var(--white);
+}
 
 :root {
     --main-black: #171717;
     --main-bg-grey: #222222;
     --main-bg-grey2: #171717;
-    --main-pink: #E31B6D;
-    --main-white: #f8f8f8;
-    --main-blue: #04C2C9;
 
-    --black: #1F2232;
-    /* --black2: #1c1f2b; */
-    /* --black3: #171825; */
-    /* --black4: #10101a; */
-    --black2: #07080ca2;
-    --black3: #171825d2;
-    --black4: #10101acb;
     --grey: #596475;
     --darkgrey: #3a424d;
     --green: #64F58D;
@@ -26,16 +30,19 @@ OVERALL CSS
     --pink: #F46197;
     --orange: #FF784F;
 
+    --starColorTwo: rgba(0, 0, 0, 0.25);
     --gutter: 20px;
 }
 
 :root{
-    --body-font: 'Poppins', sans-serif;
+    /* --body-font: 'Poppins', sans-serif; */
+    --body-font: 'Montserrat', sans-serif;
     --title-font-size: 4rem;
     --big-font-size: 2rem;
     --h2-font-size: 1.25rem;
     --normal-font-size: 0.938rem;
-  }
+}
+
 @media screen and (min-width: 768px){
     :root{
         --title-font-size: 5.5rem;
@@ -63,7 +70,7 @@ body,html {
 
 body {
     overflow-x: hidden;
-    background-color: var(--black);
+    background-color: var(--white);
     color: var(--white);
     font-family: var(--body-font);
 }
@@ -75,7 +82,7 @@ img {
 
 a{
 	text-decoration: none;
-	color:var(--orange);
+	color: black;
 }
 
 ul{
@@ -89,6 +96,7 @@ ul{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    width: 100vw;
 }
 
 .grid-wrapper {
@@ -97,6 +105,16 @@ ul{
 }
 
 .container {
+    overflow: hidden;
+}
+
+.container-inner {
+    margin: auto;
+    position: relative;
+    background-color: #cccccc;
+    width: 97%;
+    top: 3%;
+    height: 94%;
     overflow: hidden;
 }
 
@@ -113,7 +131,7 @@ NAV CSS
 .nav-links {
     display: flex;
     list-style-type: none;
-    width: calc(25vw + 10vh);
+    width: calc(30vw + 10vh);
     height: 100%;
     justify-content: space-around;
     align-items: center;
@@ -124,31 +142,25 @@ NAV CSS
 }
 
 .nav-links a {
-    font-size: calc(1vh + 1vw);
-    /* font-size: 20px; */
+    font-size: calc(1vh + 0.8vw);
     text-decoration: none;
     color: var(--white);
-    font-weight: 900;
-    /* color: var(--green); */
+    /* color: black; */
+    /* font-weight: 900; */
 }
 
 .nav-links a:hover {
-    background-color: var(--orange);
-    font-size: calc(5px + calc(1vh + 1vw));
-    letter-spacing: 2px;
+    color: black;
+    font-size: calc(2px + calc(1vh + 1vw));
+    font-weight: 900;
+    /* letter-spacing: 2px; */
 }
-
-/* .nav-links a.active {
-    background-color: var(--main-pink);
-    font-size: calc(5px + calc(1vh + 1vw));
-    letter-spacing: 2px;
-} */
 
 @media screen and (max-width: 675px) {
     .line {
         width: 30px;
         height: 4px;
-        background: var(--white);
+        background: black;
         margin: 5px;
         transition: all 0.5s;
     }
@@ -183,7 +195,7 @@ NAV CSS
         -webkit-clip-path: circle(1200px at 89% 5%);
         pointer-events: all;
         padding: 0;
-        background-color: var(--green);
+        background-color: var(--white);
     }
 
     .nav-links a {
@@ -208,6 +220,13 @@ NAV CSS
         -webkit-transform: rotate(45deg) translate(-5px, -6.5px);
         transform: rotate(45deg) translate(-6.8px, -6.8px);
     }
+
+    /* The white border container */
+    .container-inner {
+        width: 97%;
+        top: 10%;
+        height: 87%;
+    }
 }
 
 /*====================================================
@@ -217,29 +236,44 @@ INTRO CSS
     height: 100vh;
     width: 100vw;
     position: relative;
-    max-width: 1550px;
     margin: auto;
 }
 
+.intro-info {
+    position: absolute; 
+    margin: auto;
+    width: 80%;
+    height: 80%;
+    overflow: hidden;
+    top: 10%;
+    left: 10%;
+
+}
+
 .title {
-    /* font-size: calc(4vw + 4vh); */
     font-size: var(--title-font-size);
     font-family: 'Hammersmith One', sans-serif;
     font-weight: 100;
-    position: absolute;
-    top: 28vh;
-    left: 5vw;
+    position: relative;
     transition: 0s ease;
+    text-transform: uppercase;
+    top: 25%;
+    /* color: rgb(0, 0, 0); */
 }
 
 .title span {
-    color: var(--green);
     font-weight: 900;
+    letter-spacing: 5px;
+    /* color: #cccccc; */
+    color: black;
+    /* text-shadow: 0 5px 10px black;
+    filter: progid:DXImageTransform.Microsoft.Glow(Color=black,Strength=1); */
 }
 
 .title-span {
-    color: var(--orange) !important;
+    color: var(--white) !important;
     font-weight: 900;
+    text-shadow: none !important;
 }
 
 .title-text {
@@ -248,33 +282,66 @@ INTRO CSS
     font-size: var(--big-font-size);
     font-family: 'Hammersmith One', sans-serif;
     font-weight: 500;
-    position: absolute;
-    top: 42vh;
-    left: 5vw;
     color: var(--white);
-    text-align: left;
+    /* color: black; */
+    text-align: center;
+    position: relative;
+    top: 25%;
 }
 
-.fa-arrow-down {
-    top: 80vh;
+.typed-text-cursor {
+    color: black;
+    animation: typing 1s step-end infinite;
+}
+
+@keyframes typing {
+    0% {
+        color: black;
+    }
+    49% {
+        color: black;
+    }
+    50% {
+        color: transparent;
+    }
+}
+
+.side-text-left {
     position: absolute;
-    left: 50%;
-    width: 5vw;
-    margin-left: -2.5vw;
-    animation: animateArrow 2s linear infinite;
-    cursor: pointer;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 0;
+    transform: translate(-25px,0) rotate(90deg);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    z-index: 999;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto;
+    zoom: 1.005;
 }
 
-@keyframes blink {
-    0% {background-color: white;}
-    49% {background-color: white;}
-    50% {background-color: transparent;}
-    99% {background-color: transparent;}
-    100% {background-color: white;}
+.side-text-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 0;
+    transform: translate(25px,0) rotate(-90deg);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    z-index: 999;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto;
+    zoom: 1.005;
 }
 
 .fa-arrow-down:hover {
-    color: var(--green) !important; 
+    color: black !important; 
 }
 
 @keyframes animateArrow {
@@ -290,6 +357,41 @@ INTRO CSS
     100% {
         transform: translate(0, -1px);
     }
+}
+
+/* SCROLL ARROW */
+.arrow-text {
+    font-size: 12px;
+    width: 58px;
+    height: 62px;
+    position: absolute;
+    left: 50%;
+    margin-left: -30px;
+    bottom: 10px;
+    color: white;
+}
+
+.arrow {
+    position: absolute;
+    left: 50%;
+    margin-left: -30px;
+    bottom: 20px;
+    width: 35px;
+    height: 35px;
+    margin: -20px 0 0 -20px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    border-left: none;
+    border-top: none;
+    border-right: 1px #fff solid;
+    border-bottom: 1px #fff solid;
+  }
+
+
+.arrow:hover {
+    border-right: 3px black solid;
+    border-bottom: 3px black solid;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 500px) {
@@ -322,37 +424,194 @@ INTRO CSS
     }
 }
 
-.design-box {
-    width: 50vw;
-    height: 50vw;
-    background-color: var(--black3);
-    position: absolute;
-    top: 5vh;
-    left: 10%;
-    z-index: -1;
-    transition: 0s ease;
+@media screen and (max-width: 525px) {
+    .side-text-right { 
+        right: 0;
+        top: 0;
+        bottom: -65%;
+        margin: auto;
+        height: 0;
+    }
+
+    .side-text-left {
+        left: 0;
+        top: 0;
+        bottom: 65%;
+        margin: auto;
+        height: 0;
+    }
+
 }
 
-.design-box2 {
-    width: 30vw;
-    height: 30vw;
-    background-color: var(--black4);
-    position: absolute;
-    top: 15vh;
-    left: 40%;
-    z-index: -1;
-    transition: 0s ease;
+/*====================================================
+ABOUT ME CSS 
+=====================================================*/
+.aboutme {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--white);
+    overflow: hidden;
+    position: relative; 
+    align-items: center;
 }
 
-.design-box3 {
-    width: 20vw;
-    height: 20vw;
-    background-color: var(--black2);
+.aboutme-title {
+    font-size: var(--big-font-size);
+    font-weight: 900;
+    color: black;
+    height: 10vh;
+    padding: 1vh;
+}
+
+.aboutme-title span {
+    color: rgb(88, 88, 88);
+}
+
+.aboutme-container {
+    margin: auto;
+    padding: 0;
+    /* position: absolute; */
+    width: 100%;
+    height: 80%;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: row;
+    max-width: 1440px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.aboutme-section-one {
+    color: black;
+    padding: 50px;
+    width: 50%;
+    height: 100%;
+    /* background-color: orange; */
+    margin: auto;
+}
+
+.aboutme-section-one-title {
+    /* text-align: left; */
+    font-size: var(--big-font-size);
+}
+
+.aboutme-section-one-text {
+    text-align: left;
+    line-height: 1.5em;
+}
+
+.aboutme-contact-icons {
+    margin: auto;
+    margin-top: 10%;
+    position: relative;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* margin-left: 50px; */
+    /* padding: 50px; */
+}
+
+.aboutme-contact-fa {
+    position: relative;
+    margin: auto;
+}
+
+a.aboutme-contact-fa:hover {
+    /* color: grey; */
+    color: black;
+    text-shadow: 0 5px 10px black;
+}
+
+.aboutme-section-two {
+    /* text-align: left; */
+    color: black;
+    padding: 50px;
+    width: 50%;
+    height: 100%;
+    /* background-color: orange; */
+    margin: auto;
+    line-height: 1.5em;
+}
+
+.aboutme-section-two-title {
+    text-align: center;
+    font-size: var(--big-font-size);
+}
+
+.aboutme-skill-list li {
+    text-align: left; 
+    list-style-type: square;
+    line-height: 2.0em;
+}
+
+.about-side-text-left {
+    color: black;
     position: absolute;
-    top: 45vh;
-    left: 65%;
-    z-index: -1;
-    transition: 0s ease;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 0;
+    transform: translate(-25px,0) rotate(90deg);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    z-index: 999;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto;
+    zoom: 1.005;
+}
+
+.about-side-text-right {
+    color: black;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 0;
+    transform: translate(25px,0) rotate(-90deg);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    z-index: 999;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto;
+    zoom: 1.005;
+}
+
+@media screen and (max-width: 680px) {
+    .aboutme {
+        height: 180vh;
+    }
+
+    .aboutme-container {
+        margin: auto;
+        padding: 0;
+        width: 100%;
+        height: 80%;
+        margin-top: 10vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .aboutme-section-one {
+        color: black;
+        padding: 10px;
+        width: 90%;
+        height: 100%;
+        margin: auto;
+    }
+
+    .aboutme-section-two {
+        color: black;
+        padding: 10px;
+        width: 80%;
+        height: 100%;
+    }
+
+
 }
 
 /*====================================================
@@ -361,29 +620,44 @@ PORTFOLIO CSS
 .portfolio {
     height: 100vh;
     width: 100vw;
-    background-color: var(--green);
+    /* background-color: var(--white); */
+    background-color: black;
+    overflow: hidden;
+    position: relative;
 }
 
 .portfolio-title {
     font-size: var(--big-font-size);
     font-weight: 900;
-    color: var(--black);
-    padding: 2vh;
+    /* color: black; */
+    color: var(--white);
+    height: 10vh;
+    padding: 1vh;
 }
 
 .portfolio-title span {
-    color: var(--orange);
+    color: rgb(88, 88, 88);
+}
+
+.portfolio-container {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+    height: 80%;
 }
 
 .portfolio-gallery {
+    margin: auto;
+    height: 100%;
     display: grid;
     grid-gap: calc(var(--gutter) / 2);
     grid-template-columns: repeat(6, calc(50% - var(--gutter) * 2));
     grid-template-rows: minmax(65vh, 1fr);
     overflow-x: scroll;
     scroll-snap-type: x proximity;
-    padding-bottom: calc(.75 * var(--gutter));
-    margin-bottom: calc(-.25 * var(--gutter));
+    /* padding-bottom: calc(.75 * var(--gutter)); */
+    /* margin-bottom: calc(-.25 * var(--gutter)); */
 }
 
 .portfolio-gallery > li,
@@ -409,9 +683,9 @@ PORTFOLIO CSS
 }
 
 .portfolio-button {
-    border: 2px solid var(--orange);
-    color: var(--black);
-    background-color: var(--orange);
+    border: 2px solid var(--white);
+    color: var(--white);
+    background-color: transparent;
     font-weight: 900;
     padding-left: 2rem;
     padding-right: 2rem;
@@ -420,21 +694,22 @@ PORTFOLIO CSS
 
 .portfolio-button:hover {
     cursor: pointer;
-    border: 2px solid var(--green);
-    background-color: var(--green);
+    border: 2px solid var(--white);
+    background-color: var(--white);
+    color: black;
 }
 
 @media screen and (max-width: 500px) {
     .portfolio-gallery {
         grid-template-rows: minmax(75vh, 2fr); 
-        grid-template-columns: repeat(6, calc(100% - var(--gutter) * 2));
+        grid-template-columns: repeat(6, calc(120% - var(--gutter) * 2));
     }
 }
 
 .portfolio-button-view {
-    border: 2px solid var(--green);
+    border: 2px solid var(--white);
     color: var(--black);
-    background-color: var(--green);
+    background-color: var(--grey);
     font-weight: 900;
     padding-left: 2rem;
     padding-right: 2rem;
@@ -443,8 +718,8 @@ PORTFOLIO CSS
 
 .portfolio-button-view:hover {
     cursor: pointer;
-    border: 2px solid var(--orange);
-    background-color: var(--orange);
+    border: 2px solid var(--white);
+    background-color: var(--white);
 }
 
 /*====================================================
@@ -453,26 +728,40 @@ CONTACT CSS
 .contact {
     height: 100vh;
     width: 100%;
-    background-color: var(--black);
+    /* background-color: var(--black); */
+    background-color: #cccccc;
     position: relative;
 }
 
 .contact-title {
     font-size: var(--big-font-size);
     font-weight: 900;
-    color: var(--orange);
+    color: var(--white);
     padding: 2vh;
 }
 
 .contact-title span {
-    color: var(--green);
+    color: var(--grey);
 }
 
 .contact-text {
     max-width: 60vw;
     margin: auto;
-    font-size: 1.4rem;
+    font-size: var(--big-font-size);
+    font-weight: 900;
+    /* text-align: left; */
+    color: black;
 }
+
+.contact-link {
+    text-decoration: underline grey;
+}
+
+.contact-link:hover {
+    text-decoration: underline black;
+    cursor: pointer;
+}
+
 
 .contact-icons {
     width: 50vw;
@@ -490,12 +779,12 @@ CONTACT CSS
 
 .fa-icons:hover {
     cursor: pointer;
-    color: var(--green);
+    color: var(--white);
 }
 
 .footer {
-    background-color: var(--green);
-    height: 10vh;
+    background-color: var(--black);
+    height: 20vh;
     width: 100vw;
     /* top: 50vh; */
     bottom: 0;;
@@ -505,7 +794,7 @@ CONTACT CSS
 .footer-text {
     margin-top: 1rem;
     font-size: var(--normal-font-size);
-    color: var(--black);
+    color: var(--white);
     font-weight: 600;
 }
 
@@ -553,9 +842,9 @@ CONTACT CSS
 	position: absolute;
 	height: 100%;
 	width: 100%;
-	/* background: var(--darkgrey); */
 	border-radius: 50%;
 }
+
 .eye {
 	position: absolute;
 	top: 35%;
@@ -572,8 +861,7 @@ CONTACT CSS
 	height: 0;
 	width: 100%;
 	border-radius: 0 0 50% 50Array/0Array 0 40% 40%;
-    /* background: #161616; */
-    background: var(--black);
+    background: #cccccc;
 	animation: blink 4s infinite ease-in;
 }
 @keyframes blink {
@@ -665,5 +953,14 @@ CONTACT CSS
 @media screen and (max-width: 666px) {
     .cat {
         top: 40vh;
+    }
+}
+
+@media screen and (max-width: 500px) { 
+    .contact-text {
+        font-size: 1.8em;
+        margin: auto;
+        position: relative;
+        top: 15%;
     }
 }

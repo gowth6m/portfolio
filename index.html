@@ -26,80 +26,137 @@
                 </div>
                 <ul class="nav-links">
                     <li><a class="link1" href="#home">Home</a></li>
-                    <li><a class="link2" href="#portfolio">Porfolio</a></li>
-                    <li><a class="link3" href="#contactme">Contact</a></li>
+                    <li><a class="link2" href="#aboutme">About</a></li>
+                    <li><a class="link3" href="#portfolio">Porfolio</a></li>
+                    <li><a class="link4" href="#contactme">Contact</a></li>
                 </ul>
             </div>
 
             <div class="container">
                 <div class="introduction" id="home">
-                    <div class="title plax">I'm <span>Gowtham</span><span class="title-span">.</span></div>
-                    <div class="title-text plax">A programmer who <span class="typed-text"> </span><span class="typed-text-cursor">&nbsp</span></div>
-                    <div class="design-box plax1"></div>
-                    <div class="design-box2 plax2"></div>
-                    <div class="design-box3 plax3"></div>
-                    <a href="#portfolio"><i class="fa fa-arrow-down" style="font-size: calc(2vh + 2vw);"></i></a>
+                    <div class="container-inner">
+                        <!-- THE ANIMATION -->
+                        <div class="background-animation" id="background-animation">
+                            <script src="./js/backgroundAnimation.js"></script>
+                        </div>
+
+                        <div class="intro-info">
+                            <div class="title plax">I'm <span>Gowtham</span><span class="title-span">.</span></div>
+                            <div class="title-text plax">A programmer who <span class="typed-text"> </span><span class="typed-text-cursor">|</span></div>
+                        </div>
+                        <div class="side-text-left">– HELLO THERE –</div>
+                        <div class="side-text-right">– HELLO THERE –</div>
+                        <a class="arrow-div" href="#aboutme">
+                            <div class="arrow-text">SCROLL</div>
+                            <div class="arrow"></div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="aboutme" id="aboutme">
+                    <!-- <div class="aboutme-title">About Me<span>.</span></div> -->
+                    <div class="aboutme-container">
+                        <div class="about-side-text-left">– HELLO AGAIN –</div>
+                        <div class="about-side-text-right">– SCROLL DOWN –</div>
+                        <div class="aboutme-section-one">
+                            <div class="aboutme-section-one-title">About Me</div>
+                            <br><br>
+                            <div class="aboutme-section-one-text">
+                                I'm a second year Computer Science student at University of Exeter. I'm passionate about programming and dabbling in design. I love making user & browser-friendly websites and web-apps, and am currently delving into software development. 
+                                <br><br>
+                                I'm currently learning about Swift and trying to get into iOS development. Feel free to contact me by email or check out my work on GitHub.
+                                <div class="aboutme-contact-icons">
+                                    <a href="mailto:gowtham4n@gmail.com" target="_blank" class="aboutme-contact-fa fa fa-envelope fa-icons" aria-hidden="true"></a>
+                                    <a href="https://www.linkedin.com/in/gowth6m/" target="_blank" class="aboutme-contact-fa fa fa-linkedin-square fa-icons" aria-hidden="true"><a>
+                                    <a href="https://github.com/gowth6m/" target="_blank" class="aboutme-contact-fa fa fa-github-square fa-icons" aria-hidden="true"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="aboutme-section-two">
+                            <div class="aboutme-section-one-title">Skills</div>
+                            <br><br>
+                            <ul class="aboutme-skill-list">
+                                <li>Java</li>
+                                <li>Python</li>
+                                <li>HTML, CSS & Javascript</li>
+                                <li>Swift</li>
+                                <li>C, C# & C++</li>
+                            </ul> 
+                            <ul class="aboutme-skill-list">
+                                <li>Haskell</li>
+                                <li>SQL</li>
+                                <li>PHP</li>
+                                <li>Front-End Frameworks 
+                                    <br>(e.g. Bootstrap, jQuery)</li>
+                                <li>Unity Game Engine</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="portfolio" id="portfolio">
                     <div class="portfolio-title">Portfolio<span>.</span></div>
-                    <ul class="portfolio-gallery">
-                        <li class="item">
-                            <div>
-                                <img class="portfolio-gif" src="./assets/zombie_maze.gif" alt="">
-                                <div class="portfolio-text"><span>Zombie Maze Game</span><br>A simple 2D top-down zombie shooting game created in Python using the PyGame library.</div>
-                                <br>
-                                <a href="https://github.com/gowth6m/zombie-maze" target="_blank" class="portfolio-button">GitHub</a>
-                            </div>
-                        </li>
+                    <div class="portfolio-container">
+                        <ul class="portfolio-gallery">
+                            <li class="item">
+                                <div>
+                                    <img class="portfolio-gif" src="./assets/zombie_maze.gif" alt="">
+                                    <div class="portfolio-text"><span>Zombie Maze Game</span><br>A simple 2D top-down zombie shooting game created in Python using the PyGame library.</div>
+                                    <br>
+                                    <a href="https://github.com/gowth6m/zombie-maze" target="_blank" class="portfolio-button">GitHub</a>
+                                </div>
+                            </li>
 
-                        <li class="item">
-                            <div>
-                                <img class="portfolio-gif" src="./assets/gol.gif" alt="">
-                                <div class="portfolio-text"><span>Game of Life</span><br>Implementation of Conway's Game of Life in Haskell using an imperative approach.</div>
-                                <br>
-                                <a href="https://github.com/gowth6m/game-of-life-haskell" target="_blank" class="portfolio-button">GitHub</a>
-                            </div>
-                        </li>
+                            <li class="item">
+                                <div>
+                                    <img class="portfolio-gif" src="./assets/gol.gif" alt="">
+                                    <div class="portfolio-text"><span>Game of Life</span><br>Implementation of Conway's Game of Life in Haskell using an imperative approach.</div>
+                                    <br>
+                                    <a href="https://github.com/gowth6m/game-of-life-haskell" target="_blank" class="portfolio-button">GitHub</a>
+                                </div>
+                            </li>
 
-                        <li class="item">
-                            <div>
-                                <img class="portfolio-gif" src="./assets/pwgen.png" alt="">
-                                <div class="portfolio-text"><span>Password Generator</span><br>Password generator made with JavaScript using JavaScript's built in random functions.</div>
-                                <br>
-                                <a href="https://github.com/gowth6m/password-generator" target="_blank" class="portfolio-button">GitHub</a>
-                                <a href="https://gowth6m.github.io/password-generator/" target="_blank" class="portfolio-button-view">View</a>
-                            </div>
-                        </li>
+                            <li class="item">
+                                <div>
+                                    <img class="portfolio-gif" src="./assets/pwgen.png" alt="">
+                                    <div class="portfolio-text"><span>Password Generator</span><br>Password generator made with JavaScript using JavaScript's built in random functions.</div>
+                                    <br>
+                                    <a href="https://github.com/gowth6m/password-generator" target="_blank" class="portfolio-button">GitHub</a>
+                                    <a href="https://gowth6m.github.io/password-generator/" target="_blank" class="portfolio-button-view">View</a>
+                                </div>
+                            </li>
 
-                        <li class="item">
-                            <div>
-                                <img class="portfolio-gif" src="./assets/lift-demo.gif" alt="">
-                                <div class="portfolio-text"><span>Lift Project</span><br>A simulation of a lift system implemented in Java with GUI.</div>
-                                <br>
-                                <a href="https://github.com/gowth6m/lift-system" target="_blank" class="portfolio-button">GitHub</a>
-                            </div>
-                        </li>
+                            <li class="item">
+                                <div>
+                                    <img class="portfolio-gif" src="./assets/lift-demo.gif" alt="">
+                                    <div class="portfolio-text"><span>Lift Project</span><br>A simulation of a lift system implemented in Java with GUI.</div>
+                                    <br>
+                                    <a href="https://github.com/gowth6m/lift-system" target="_blank" class="portfolio-button">GitHub</a>
+                                </div>
+                            </li>
 
-                        <li class="item">
-                            <div>
-                                <img class="portfolio-gif" src="./assets/gravity.png" alt="">
-                                <div class="portfolio-text"><span>Gravity Simulator</span><br>Simulation of gravity written in JavaScript. [WORK IN PROGRESS!]</div>
-                                <br>
-                                <a href="https://github.com/gowth6m/gravity-simulator" target="_blank" class="portfolio-button">GitHub</a>
-                                <a href="https://gowth6m.github.io/gravity-simulator/" target="_blank" class="portfolio-button-view">View</a>
-                            </div>
-                        </li>
-                      </ul>
+                            <li class="item">
+                                <div>
+                                    <img class="portfolio-gif" src="./assets/gravity.png" alt="">
+                                    <div class="portfolio-text"><span>Gravity Simulator</span><br>Simulation of gravity written in JavaScript. [WORK IN PROGRESS!]</div>
+                                    <br>
+                                    <a href="https://github.com/gowth6m/gravity-simulator" target="_blank" class="portfolio-button">GitHub</a>
+                                    <a href="https://gowth6m.github.io/gravity-simulator/" target="_blank" class="portfolio-button-view">View</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
                 <div class="contact" id="contactme">
                     <div class="contact-title">Contact Me<span>.</span></div>
                     <br>
                     <br>
-                    <div class="contact-text">I'm a second year Computer Science student at University of Exeter. I'm passionate about programming and dabbling in design. I love making user & browser-friendly websites and web-apps, and am currently delving into software development. Feel free to contact me by email or check out my work on GitHub.</div>
+                    <div class="contact-text">To get in touch,
+                        email: <a href="mailto:gowtham4n@gmail.com" class="contact-link">gowtham4n@gmail.com</a><br>
+                        or message me on LinkedIn</div>
                     <br><br>
-                    <div class="cat">
+                    <!-- <div class="cat">
                         <div class="face">
                             <div class="eye eye--left">
                                 <div class="eye-pupil"></div>
@@ -108,7 +165,7 @@
                                 <div class="eye-pupil"></div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="contact-icons">
                         <a href="mailto:gowtham4n@gmail.com" target="_blank" class="fa fa-envelope fa-icons" aria-hidden="true"></a>
                         <a href="https://www.linkedin.com/in/gowth6m/" target="_blank" class="fa fa-linkedin-square fa-icons" aria-hidden="true"><a>
