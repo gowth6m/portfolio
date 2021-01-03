@@ -184,7 +184,6 @@ NAV CSS
         -webkit-clip-path: circle(30px at 89% 5%);
         transition: all 0.4s ease-out;
         pointer-events: none;
-
     }
 
     .nav-links.open {
@@ -192,12 +191,14 @@ NAV CSS
         -webkit-clip-path: circle(1200px at 89% 5%);
         pointer-events: all;
         padding: 0;
-        background-color: var(--white);
+        /* background-color: var(--white); */
+        background-color: var(--portfolioBG);
     }
 
     .nav-links a {
         font-size: 5vh;
         color: var(--black);
+        font-weight: 900;
     }
 
     .nav-links li {
@@ -262,7 +263,6 @@ INTRO CSS
 .title span {
     font-weight: 900;
     letter-spacing: 5px;
-    /* color: var(--titleGowtham); */
     color: var(--portfolioBG);
     text-shadow: -4px 0 var(--black), 0 4px var(--black), 4px 0 var(--black), 0 -4px var(--black);
     /* text-shadow: 4px 0 0 black, -4px 0 0 black, 0 4px 0 black, 0 -4px 0 black, 2px 2px black, -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black; */
@@ -315,7 +315,7 @@ INTRO CSS
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 500;
-    z-index: 999;
+    z-index: 99;
     -webkit-font-smoothing: subpixel-antialiased;
     -moz-osx-font-smoothing: auto;
     zoom: 1.005;
@@ -332,7 +332,7 @@ INTRO CSS
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 500;
-    z-index: 999;
+    z-index: 99;
     -webkit-font-smoothing: subpixel-antialiased;
     -moz-osx-font-smoothing: auto;
     zoom: 1.005;
@@ -547,7 +547,7 @@ a.aboutme-contact-fa:hover {
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 500;
-    z-index: 999;
+    z-index: 99;
     -webkit-font-smoothing: subpixel-antialiased;
     -moz-osx-font-smoothing: auto;
     zoom: 1.005;
@@ -565,7 +565,7 @@ a.aboutme-contact-fa:hover {
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 500;
-    z-index: 999;
+    z-index: 99;
     -webkit-font-smoothing: subpixel-antialiased;
     -moz-osx-font-smoothing: auto;
     zoom: 1.005;

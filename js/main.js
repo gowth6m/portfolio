@@ -4,13 +4,14 @@
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".typed-text-cursor");
 
-const textArray = ["likes problem solving",
-    "is studying in Exeter", 
-    "loves to draw",
+const textArray = ["is looking for internships",
+    "likes problem solving",
+    "is studying in Exeter",
     "loves the gym!",
-    "wants to learn about ios dev", 
+    "wants to create iOS apps", 
     "is looking for internships",
-    "wants to get into game dev"];
+    "wants to get into data science",
+    "loves to draw"];
 
 const typingDelay = 100;
 const erasingDelay = 60;
