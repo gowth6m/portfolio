@@ -659,6 +659,8 @@ PORTFOLIO CSS
     align-items: center;
     background: var(--portfolioGallery);
     border-radius: 60px;
+    border: white solid 2px;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 } 
 
 .portfolio-gif {
@@ -692,7 +694,7 @@ PORTFOLIO CSS
 @media screen and (max-width: 500px) {
     .portfolio-gallery {
         grid-template-rows: minmax(75vh, 2fr); 
-        grid-template-columns: repeat(6, calc(120% - var(--gutter) * 2));
+        grid-template-columns: repeat(6, calc(100% - var(--gutter) * 2));
     }
 
     .portfolio-container {
