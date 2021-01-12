@@ -1,7 +1,6 @@
 /*====================================================
 OVERALL CSS 
 =====================================================*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
 
@@ -191,7 +190,6 @@ NAV CSS
         -webkit-clip-path: circle(1200px at 89% 5%);
         pointer-events: all;
         padding: 0;
-        /* background-color: var(--white); */
         background-color: var(--portfolioBG);
     }
 
@@ -255,9 +253,6 @@ INTRO CSS
     transition: 0s ease;
     text-transform: uppercase;
     top: 25%;
-
-    /* text-shadow: 0 5px 10px var(--titleGowtham);
-    filter: progid:DXImageTransform.Microsoft.Glow(Color=var(--titleGowtham),Strength=1); */
 }
 
 .title span {
@@ -265,9 +260,6 @@ INTRO CSS
     letter-spacing: 5px;
     color: var(--portfolioBG);
     text-shadow: -4px 0 var(--black), 0 4px var(--black), 4px 0 var(--black), 0 -4px var(--black);
-    /* text-shadow: 4px 0 0 black, -4px 0 0 black, 0 4px 0 black, 0 -4px 0 black, 2px 2px black, -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black; */
-    /* text-shadow: 0 5px 10px var(--titleGowtham);
-    filter: progid:DXImageTransform.Microsoft.Glow(Color=var(--titleGowtham),Strength=1); */
 }
 
 .title-span {
@@ -406,20 +398,6 @@ INTRO CSS
         left: 2vw;
         margin-left: 2vw;
     }
-
-    .design-box {
-        width: 80vw;
-        height: 80vw;
-        top: 30vh;
-        /* display: none; */
-    }
-
-    .design-box2 {
-        /* top: 40vh; */
-        margin-top: 50vh;
-        position: absolute;
-        /* display: none; */
-    }
 }
 
 @media screen and (max-width: 525px) {
@@ -507,7 +485,6 @@ ABOUT ME CSS
 
 a.aboutme-contact-fa {
     color: var(--aboutTextColor);
-    /* color: var(--portfolioBG); */
 }
 
 a.aboutme-contact-fa:hover {
@@ -601,7 +578,6 @@ a.aboutme-contact-fa:hover {
         height: 100%;
     }
 
-
 }
 
 /*====================================================
@@ -610,7 +586,6 @@ PORTFOLIO CSS
 .portfolio {
     height: 100vh;
     width: 100vw;
-    /* background-color: var(--white); */
     background-color: var(--portfolioBG);
     overflow: hidden;
     position: relative;
@@ -645,8 +620,6 @@ PORTFOLIO CSS
     grid-template-rows: minmax(65vh, 1fr);
     overflow-x: scroll;
     scroll-snap-type: x proximity;
-    /* padding-bottom: calc(.75 * var(--gutter)); */
-    /* margin-bottom: calc(-.25 * var(--gutter)); */
 }
 
 .portfolio-gallery > li,
@@ -660,7 +633,6 @@ PORTFOLIO CSS
     background: var(--portfolioGallery);
     border-radius: 60px;
     border: white solid 2px;
-    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 } 
 
 .portfolio-gif {
@@ -742,7 +714,6 @@ CONTACT CSS
 }
 
 .contact-title span {
-    /* color: var(--grey); */
     color: rgb(88, 88, 88);
 }
 
@@ -751,7 +722,6 @@ CONTACT CSS
     margin: auto;
     font-size: var(--big-font-size);
     font-weight: 900;
-    /* text-align: left; */
     color: var(--portfolioGallery);
 }
 
@@ -781,7 +751,6 @@ CONTACT CSS
 
 .fa-icons:hover {
     cursor: pointer;
-    /* color: var(--white); */
     text-shadow: 0 5px 10px var(--aboutTextColor);
 }
 
@@ -789,7 +758,6 @@ CONTACT CSS
     background-color: var(--portfolioGallery);
     height: 20vh;
     width: 100vw;
-    /* top: 50vh; */
     bottom: 0;;
     position: absolute;
 }
