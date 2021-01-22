@@ -53,7 +53,7 @@ OVERALL CSS
 
 * {
     box-sizing: border-box;
-    transition: all ease-in-out 200ms;
+    transition: all ease-in-out 100ms;
 }
 
 body,html {
@@ -379,6 +379,7 @@ INTRO CSS
 
 
 .arrow:hover {
+    transition: all ease-in-out 0ms;
     border-right: 3px black solid;
     border-bottom: 3px black solid;
     cursor: pointer;
@@ -546,6 +547,23 @@ a.aboutme-contact-fa:hover {
     -webkit-font-smoothing: subpixel-antialiased;
     -moz-osx-font-smoothing: auto;
     zoom: 1.005;
+}
+
+.aboutme-photo {
+    margin-top: 5vh;
+}
+
+.my-photo {
+    border: 5px black solid;
+    border-radius: 50%;
+    height: 5%;
+    width: 50%;
+}
+
+.aboutme-skill-list {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
 }
 
 @media screen and (max-width: 680px) {
