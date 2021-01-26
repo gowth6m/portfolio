@@ -1,13 +1,19 @@
 
 // constants
-// const COLOR_SPACE = "#cccccc";
-// const COLOR_STARS = "rgba(255, 255, 255, 0.2)";
-const COLOR_SPACE = "#EADEDA";
-const COLOR_STARS = "rgba(153, 136, 136, 0.5)";
+const COLOR_SPACE = "#040403";
+// const COLOR_STARS = "rgba(153, 136, 136, 0.5)";
+// const COLOR_STARS = "rgba(100, 100, 100, 0.8)";
+const COLOR_STARS = "rgba(255, 255, 255, 0.9)";
 
-const STAR_NUM = 100; // number of stars in the starfield
-const STAR_SIZE = 0.02; // max star size as a fraction of screen width
-const STAR_SPEED = 0.01; // fraction of screen width per second
+// const COLOR_SPACE = "#EADEDA";
+// const COLOR_STARS = "rgba(153, 136, 136, 0.5)";
+
+// const STAR_NUM = 100; // number of stars in the starfield
+// const STAR_SIZE = 0.02; // max star size as a fraction of screen width
+// const STAR_SPEED = 0.01; // fraction of screen width per second
+const STAR_NUM = 300; // number of stars in the starfield
+const STAR_SIZE = 0.002; // max star size as a fraction of screen width
+const STAR_SPEED = 0.012; // fraction of screen width per second
 // const STAR_SIZE = 0.050;
 
 // set up the canvas and context
@@ -40,10 +46,11 @@ function generateStars() {
 
 // set up the animation loop
 var timeDelta, timeLast = 0;
+// var freezeWindow = false;
+
 requestAnimationFrame(loop);
 
 function loop(timeNow) {
-    checkIfOnTab();
     // calculate the time difference
     timeDelta = timeNow - timeLast;
     timeLast = timeNow;
@@ -80,8 +87,8 @@ function loop(timeNow) {
             stars[i].y = 0 - stars[i].r;
         }
     }
-
-    // To fix tabbed out render problem
+    
+    // To pause the animation as requestAnimationFrame doesn't load during window not focus
     // if(!document.hasFocus()) {
     //     console.log("System is paused");
     //     stars.splice(0,stars.length);
@@ -91,6 +98,11 @@ function loop(timeNow) {
 
     // call the next frame
     requestAnimationFrame(loop);
+}
+
+function loopDuringPause() {
+    console.log("paused");
+
 }
 
 function randomSign() {
@@ -109,10 +121,4 @@ function generateRandomColor() {
 function generateRandomOpacity() {
     var opacityValue = Math.floor(Math.random() * (1 - 0.5 + 1)) + 0.5;
     return "rgba(0, 0, 0, "+ opacityValue +")";
-}
-
-function checkIfOnTab() {
-    while(!document.hasFocus) {
-        null;
-    }
 }

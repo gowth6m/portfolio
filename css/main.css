@@ -5,7 +5,6 @@ OVERALL CSS
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
 
 :root {
-    --black: #040403;
     --white: #f8f8f8;
     --greyWhite: #cccccc;
     --starColorTwo: rgba(0, 0, 0, 0.25);
@@ -13,29 +12,27 @@ OVERALL CSS
 }
 
 :root {
+    --body: #0e0e0e;
     /* INTRO */
-    --introContainer: var(--black);
-    --titleGowtham: var(--black);
-    --titleOther: var(--black);
+    --introContainer: var(--white);
+    --titleGowtham: var(--white);
+    --titleOther: var(--white);
     --aboutTextColor: var(--white);
-    --sideText: var(--black);
-    --scrollArrow: var(--black);
+    --sideText: var(--white);
+    --scrollArrow: var(--white);
     /* NAV */
-    --NavColor: var(--black);
-    /* ABOUTME */
-    --aboutBackground: var(--white);
-    --aboutTextColor: var(--black);
+    --NavColor: var(--white);
+    --aboutTextColor: var(--white);
     /* PORTFOLIO */
-    --portfolioBG: #EADEDA;
-    --portfolioGallery: rgba(153, 136, 136, 1);
-}
-
-:root {
-    --gutter: 20px;
+    --portfolioBG: #040403;
+    --portfolioGallery: rgb(20, 20, 20);
+    --portfolioGalleryHover: rgba(255, 255, 255, 0.4);
 }
 
 :root{
     --body-font: 'Montserrat', sans-serif;
+    --big-title-font-size: 5rem;
+    --big2-title-font-size: 6rem;
     --title-font-size: 4rem;
     --big-font-size: 2rem;
     --h2-font-size: 1.25rem;
@@ -44,6 +41,8 @@ OVERALL CSS
 
 @media screen and (min-width: 768px){
     :root{
+        --big2-title-font-size: 8rem;
+        --big-title-font-size: 6.5rem;
         --title-font-size: 5.5rem;
         --big-font-size: 3.5rem;
         --h2-font-size: 2rem;
@@ -69,8 +68,8 @@ body,html {
 
 body {
     overflow-x: hidden;
-    background-color: var(--white);
-    color: var(--black);
+    background-color: var(--body);
+    color: var(--white);
     font-family: var(--body-font);
 }
 
@@ -81,7 +80,7 @@ img {
 
 a{
 	text-decoration: none;
-	color: var(--black);
+	color: var(--white);
 }
 
 ul{
@@ -147,16 +146,21 @@ NAV CSS
 }
 
 .nav-links a:hover {
-    color: black;
     font-size: calc(2px + calc(1vh + 1vw));
     font-weight: 900;
+}
+
+@media screen and (max-width: 1024px) { 
+    .nav-links {
+        width: calc(50vw + 10vh);
+    }
 }
 
 @media screen and (max-width: 675px) {
     .line {
         width: 30px;
         height: 4px;
-        background: black;
+        background: var(--white);
         margin: 5px;
         transition: all 0.5s;
     }
@@ -195,7 +199,7 @@ NAV CSS
 
     .nav-links a {
         font-size: 5vh;
-        color: var(--black);
+        color: var(--white);
         font-weight: 900;
     }
 
@@ -259,11 +263,13 @@ INTRO CSS
     font-weight: 900;
     letter-spacing: 5px;
     color: var(--portfolioBG);
-    text-shadow: -4px 0 var(--black), 0 4px var(--black), 4px 0 var(--black), 0 -4px var(--black);
+    /* -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: var(--white); */
+    text-shadow: -4px 0 var(--white), 0 4px var(--white), 4px 0 var(--white), 0 -4px var(--white);
 }
 
 .title-span {
-    color: rgb(90, 90, 90) !important;
+    color: rgba(255, 255, 255, 0.5) !important;
     font-weight: 900;
     text-shadow: none !important;
 }
@@ -280,16 +286,16 @@ INTRO CSS
 }
 
 .typed-text-cursor {
-    color: black;
+    color: var(--white);
     animation: typing 1s step-end infinite;
 }
 
 @keyframes typing {
     0% {
-        color: black;
+        color: var(--white);
     }
     49% {
-        color: black;
+        color: var(--white);
     }
     50% {
         color: transparent;
@@ -380,8 +386,8 @@ INTRO CSS
 
 .arrow:hover {
     transition: all ease-in-out 0ms;
-    border-right: 3px black solid;
-    border-bottom: 3px black solid;
+    border-right: 3px var(--white) solid;
+    border-bottom: 3px var(--white)  solid;
     cursor: pointer;
 }
 
@@ -451,17 +457,63 @@ ABOUT ME CSS
     padding-right: 50px;
 }
 
+.aboutme-section-title {
+    position: relative;
+    direction: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--aboutTextColor);
+    padding: 50px;
+    width: 50%;
+    height: auto;
+    margin: auto;
+    transition: 0s ease;
+    background-attachment: fixed;
+}
+
+.aboutme-section-title-two {
+    position: relative;
+    direction: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--aboutTextColor);
+    padding: 50px;
+    width: 50%;
+    height: auto;
+    margin: auto;
+    transition: 0s ease;
+    background-attachment: fixed;
+}
+
 .aboutme-section-one {
     color: var(--aboutTextColor);
     padding: 50px;
     width: 50%;
     height: 100%;
     margin: auto;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .aboutme-section-one-title {
     font-weight: 900;
-    font-size: var(--big-font-size);
+    font-size: var(--big-title-font-size);
+    -webkit-text-stroke-width: 1.2px;
+    -webkit-text-stroke-color: var(--white);
+    color: var(--body);
+    text-transform: uppercase;
+    letter-spacing: -5px;
+    transition: 0s ease;
+    background-attachment: fixed;
+}
+
+.aboutme-section-one-title-bold {
+    font-weight: 900;
+    font-size: var(--big-title-font-size);
+    text-transform: uppercase;
+    letter-spacing: -5px;
+    transition: 0s ease;
 }
 
 .aboutme-section-one-text {
@@ -473,7 +525,7 @@ ABOUT ME CSS
     margin: auto;
     margin-top: 10%;
     position: relative;
-    width: 50%;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -493,6 +545,23 @@ a.aboutme-contact-fa:hover {
     text-shadow: 0 5px 10px var(--aboutTextColor);
 }
 
+.aboutme-to-portfolio-buttonn {
+    /* height: 20px; */
+    /* width: 20%; */
+    background-color: var(--white);
+    color: var(--body);
+    border-radius: 10px;
+    font-size: large;
+    font-weight: 900;
+    margin-left: 5%;
+    padding: 14px;
+}
+
+.aboutme-to-portfolio-buttonn:hover {
+    cursor: pointer;
+    box-shadow: 0 5px 10px var(--aboutTextColor);
+}
+
 .aboutme-section-two {
     color: var(--aboutTextColor);
     padding: 50px;
@@ -500,11 +569,31 @@ a.aboutme-contact-fa:hover {
     height: 100%;
     margin: auto;
     line-height: 1.5em;
+    transition: 0s ease;
 }
 
 .aboutme-section-two-title {
-    text-align: center;
-    font-size: var(--big-font-size);
+    font-weight: 900;
+    font-size: var(--big2-title-font-size);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--white);
+    color: var(--body);
+    text-transform: uppercase;
+    letter-spacing: -5px;
+}
+
+.aboutme-section-two-title-bold {
+    font-weight: 900;
+    font-size: var(--big2-title-font-size);
+    text-transform: uppercase;
+    letter-spacing: -5px;
+}
+
+.aboutme-skill-list {
+    margin: auto;
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
 }
 
 .aboutme-skill-list li {
@@ -513,8 +602,24 @@ a.aboutme-contact-fa:hover {
     line-height: 2.0em;
 }
 
+.aboutme-photo {
+    margin: auto;
+    margin-top: 5vh;
+    margin-left: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.my-photo {
+    /* border: 5px var(--white) solid; */
+    border-radius: 50%;
+    height: 5%;
+    width: 50%;
+}
+
 .about-side-text-left {
-    color: black;
+    color: var(--body-font);
     position: absolute;
     left: 0;
     top: 0;
@@ -532,7 +637,7 @@ a.aboutme-contact-fa:hover {
 }
 
 .about-side-text-right {
-    color: black;
+    color: var(--body-font);
     position: absolute;
     right: 0;
     top: 0;
@@ -549,43 +654,29 @@ a.aboutme-contact-fa:hover {
     zoom: 1.005;
 }
 
-.aboutme-photo {
-    margin-top: 5vh;
-}
-
-.my-photo {
-    border: 5px black solid;
-    border-radius: 50%;
-    height: 5%;
-    width: 50%;
-}
-
-.aboutme-skill-list {
-    columns: 2;
-    -webkit-columns: 2;
-    -moz-columns: 2;
-}
-
 @media screen and (max-width: 680px) {
     .aboutme {
-        height: 180vh;
+        height: 140vh;
     }
 
     .aboutme-container {
         margin: auto;
         padding: 0;
         width: 100%;
-        height: 80%;
-        margin-top: 10vh;
+        height: 100%;
+        /* margin-top: 10vh; */
         display: flex;
         flex-direction: column;
     }
 
+    .aboutme-container-two {
+        flex-direction: column-reverse !important;
+    }
+
     .aboutme-section-one {
-        color: black;
-        padding: 10px;
-        width: 90%;
-        height: 100%;
+        color: var(--white);
+        width: 100%;
+        height: 50%;
         margin: auto;
     }
 
@@ -596,6 +687,72 @@ a.aboutme-contact-fa:hover {
         height: 100%;
     }
 
+    .aboutme-section-title {
+        width: 100%;
+        padding: 0;
+        height: 10%;
+    }
+
+    .aboutme-section-title-two {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .aboutme-section-two-title {
+        font-size: 5em;
+    }
+
+    .aboutme-section-two-title-bold {
+        font-size: 5em;
+    }
+
+    .aboutme-section-one-title {
+        /* display: none; */
+        font-size: 4em;
+    }
+
+    .aboutme-section-one-title-bold {
+        font-size: 4em;
+        /* color: transparent;
+        -webkit-text-stroke-width: 1.2px;
+        -webkit-text-stroke-color: var(--white); */
+    }
+
+    .about-side-text-left {
+        opacity: 0;
+    }
+
+    .about-side-text-right {
+        opacity: 0;
+    }
+
+}
+
+.slanted-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 10vh;
+}
+
+@media screen and (max-width: 680px){
+    .slanted-line {
+        display: none;
+    }
+}
+
+.slanted-line-bot {
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 10vh;
+    -webkit-clip-path: polygon( 0% -3%, 100% 97%, 100% 100%, 0% 100%);
+    clip-path: polygon( 0% -3%, 100% 97%, 100% 100%, 0% 100%);
 }
 
 /*====================================================
@@ -629,41 +786,6 @@ PORTFOLIO CSS
     height: 70%;
 }
 
-.portfolio-gallery {
-    margin: auto;
-    height: 100%;
-    display: grid;
-    grid-gap: calc(var(--gutter) / 2);
-    grid-template-columns: repeat(6, calc(50% - var(--gutter) * 2));
-    grid-template-rows: minmax(65vh, 1fr);
-    overflow-x: scroll;
-    scroll-snap-type: x proximity;
-}
-
-.portfolio-gallery > li,
-.item {
-    scroll-snap-align: center;
-    padding: calc(var(--gutter) / 2 * 1.5);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: var(--portfolioGallery);
-    border-radius: 60px;
-    border: white solid 2px;
-} 
-
-.portfolio-gif {
-    object-fit: cover;
-    height: 40vh;
-    width: auto;
-    border: white solid 2px;
-}
-
-.portfolio-text span {
-    font-size: var(--h2-font-size);
-}
-
 .portfolio-button {
     border: 2px solid var(--white);
     color: var(--white);
@@ -672,6 +794,7 @@ PORTFOLIO CSS
     padding-left: 2rem;
     padding-right: 2rem;
     margin: auto;
+    font-size: large;
 }
 
 .portfolio-button:hover {
@@ -682,11 +805,6 @@ PORTFOLIO CSS
 }
 
 @media screen and (max-width: 500px) {
-    .portfolio-gallery {
-        grid-template-rows: minmax(75vh, 2fr); 
-        grid-template-columns: repeat(6, calc(100% - var(--gutter) * 2));
-    }
-
     .portfolio-container {
         width: 100%;
         height: 80%;
@@ -700,7 +818,7 @@ PORTFOLIO CSS
 
 .portfolio-button-view {
     border: 2px solid var(--white);
-    color: var(--black);
+    color: var(--white);
     background-color: var(--grey);
     font-weight: 900;
     padding-left: 2rem;
@@ -714,6 +832,130 @@ PORTFOLIO CSS
     background-color: var(--white);
 }
 
+/* ============================ */
+/* PORTFOLIO GRID */
+/* ============================ */
+.portfolio-grid {
+    margin: auto;
+    width: 80vw;
+    height: 90vh;
+    overflow: hidden;
+}
+
+.porfolio-grid-box-img {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    background-color: var(--portfolioGallery);
+    font-weight: 500;
+    /* box-shadow: 0 8px 6px -6px black; */
+    /* box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; */
+    box-shadow: rgba(34, 34, 34, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.porfolio-grid-box-img:hover {
+    cursor: pointer;
+    /* background-color: var(--portfolioGalleryHover); */
+    /* box-shadow: rgb(255, 255, 255) 0px 20px 30px -10px; */
+}
+
+.portfolio-grid-box-container {
+    background-color: rgba(20, 20, 20, 0.60);
+}
+
+/* FOR EACH PORTFOLIO IMG */
+.grid-img-1:hover {
+    background: url(https://camo.githubusercontent.com/ce9b1a8e8ee32ba63d8b82de525001a5be23ee16b4e8ef099a86ca9f5d0b2a3d/68747470733a2f2f692e696d6775722e636f6d2f364642454453592e706e67);
+    transition: all ease-in-out 0;
+    background-size: cover;
+}
+
+.grid-img-2:hover {
+    background: url(../assets/gol.gif);
+    background-size: cover; 
+}
+
+.grid-img-3:hover {
+    background: url(../assets/zombie_maze.gif);
+    background-size: cover;
+}
+
+.grid-img-4:hover {
+    background: url(../assets/gravitySim.png);
+    background-size: cover;
+}
+
+.grid-img-5:hover {
+    background: url(../assets/pwgen.png);
+    background-size: cover;
+}
+
+.grid-img-6:hover {
+    background: url(../assets/pwGenIphone.jpg);
+    background-size: cover;
+}
+
+.porfolio-grid-box-img span {
+    font-size: large;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, minmax(140px, 1fr));
+    grid-auto-rows: 40%;
+    grid-auto-flow: dense;
+}
+
+.horizontal {
+    grid-column: span 2;
+}
+
+.vertical {
+    grid-row: span 2;
+}
+
+.big {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+
+.portfolio-grid-box-title {
+    font-size: var(-h2-font-size);
+}
+
+.portfolio-grid-box-info {
+    font-size: large;
+}
+  
+@media screen and (max-width: 600px) {
+    .portfolio {
+        height: auto;
+    }
+
+    .portfolio-grid {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .porfolio-grid-box-img {
+        height: 30vh;
+    }
+    
+    .horizontal {
+        grid-column: span 1;
+    }
+    
+    .vertical {
+        grid-row: span 1;
+    }
+    
+}
 /*====================================================
 CONTACT CSS 
 =====================================================*/
@@ -721,26 +963,41 @@ CONTACT CSS
     height: 100vh;
     width: 100%;
     background-color: var(--aboutBackground);
+    background-color: rgb(0, 0, 0);
     position: relative;
+    overflow: hidden;
 }
 
-.contact-title {
+/* .contact-title {
     font-size: var(--big-font-size);
     font-weight: 900;
-    color: var(--black);
+    color: var(--white);
     padding: 2vh;
-}
+    margin-top: 5vh;
+} */
 
-.contact-title span {
+/* .contact-title span {
     color: rgb(88, 88, 88);
+} */
+
+.container-contactme {
+    /* top: 20vh; */
+    /* position: absolute; */
+    margin: auto;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .contact-text {
     max-width: 60vw;
     margin: auto;
+    /* margin-top: 5vh; */
     font-size: var(--big-font-size);
     font-weight: 900;
-    color: var(--portfolioGallery);
+    color: var(--portfolioGalleryHover);
 }
 
 .contact-link {
@@ -754,12 +1011,7 @@ CONTACT CSS
 
 
 .contact-icons {
-    width: 50vw;
-    position: absolute;
     color: var(--white);
-    top: 60vh;
-    left: 50%;
-    margin-left: -25vw;
 }
 
 .fa-icons {
@@ -792,10 +1044,6 @@ CONTACT CSS
         max-width: 90vw;
         font-size: 1rem;
     }
-
-    .contact-icons {
-        top: 55vh;
-    }
 }
 
 @media screen and (max-width: 666px) {
@@ -804,10 +1052,8 @@ CONTACT CSS
         font-size: 0.9rem;
     }
 
-    .contact-icons {
-        top: 70vh;
-        width: 90vw;
-        margin-left: -45vw;
+    .contact-link {
+        font-size: 1.4rem;
     }
 
     .fa-icons {
@@ -823,4 +1069,59 @@ CONTACT CSS
         position: relative;
         top: 15%;
     }
+}
+
+.slanted-line-contact {
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 10vh;
+}
+
+/* ------------------- */
+/* CSS PAGE ANIMATIONS */
+/* ------------------- */
+.animate-in {
+    transition: all ease-out 0;
+    -webkit-animation: fadeIn .6s ease-in;
+    animation: fadeIn .6s ease-in;
+}
+
+.animate-out {
+    -webkit-transition: opacity 0.6s;
+    transition: opacity 0.6s;
+    opacity: 0;
+}
+
+@-webkit-keyframes fadeIn {
+    0% { 
+        transform: translateX(100vw);
+    }
+    80% { 
+        transform: skew(-10deg);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% { 
+        transform: translateX(100vw);
+    }
+    80% { 
+        transform: skew(-10deg);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Paralax effect stuff */
+.plax-about {
+    transition: 0s ease;
+    background-attachment: fixed;
+    top: -25vh;
 }
