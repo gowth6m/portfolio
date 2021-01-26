@@ -656,7 +656,7 @@ a.aboutme-contact-fa:hover {
 
 @media screen and (max-width: 680px) {
     .aboutme {
-        height: 140vh;
+        height: 160vh;
     }
 
     .aboutme-container {
@@ -667,6 +667,12 @@ a.aboutme-contact-fa:hover {
         /* margin-top: 10vh; */
         display: flex;
         flex-direction: column;
+    }
+
+    .aboutme-section-one-text {
+        text-align: left;
+        line-height: normal;
+        margin-top: 12vh;
     }
 
     .aboutme-container-two {
@@ -709,15 +715,11 @@ a.aboutme-contact-fa:hover {
     }
 
     .aboutme-section-one-title {
-        /* display: none; */
         font-size: 4em;
     }
 
     .aboutme-section-one-title-bold {
         font-size: 4em;
-        /* color: transparent;
-        -webkit-text-stroke-width: 1.2px;
-        -webkit-text-stroke-color: var(--white); */
     }
 
     .about-side-text-left {
@@ -813,7 +815,6 @@ PORTFOLIO CSS
     .portfolio-title {
         height: 10vh;
     }
-
 }
 
 .portfolio-button-view {
@@ -874,27 +875,27 @@ PORTFOLIO CSS
 }
 
 .grid-img-2:hover {
-    background: url(../assets/gol.gif);
+    background: url(../../assets/gol.gif);
     background-size: cover; 
 }
 
 .grid-img-3:hover {
-    background: url(../assets/zombie_maze.gif);
+    background: url(../../assets/zombie_maze.gif);
     background-size: cover;
 }
 
 .grid-img-4:hover {
-    background: url(../assets/gravitySim.png);
+    background: url(../../assets/gravitySim.png);
     background-size: cover;
 }
 
 .grid-img-5:hover {
-    background: url(../assets/pwgen.png);
+    background: url(../../assets/pwgen.png);
     background-size: cover;
 }
 
 .grid-img-6:hover {
-    background: url(../assets/pwGenIphone.jpg);
+    background: url(../../assets/pwGenIphone.jpg);
     background-size: cover;
 }
 
@@ -944,7 +945,7 @@ PORTFOLIO CSS
     }
 
     .porfolio-grid-box-img {
-        height: 30vh;
+        height: 40vh;
     }
     
     .horizontal {
