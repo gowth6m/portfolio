@@ -55,9 +55,15 @@ OVERALL CSS
     transition: all ease-in-out 100ms;
 }
 
+body {
+  min-height: 100vh;
+  /* mobile viewport bug fix */
+  min-height: -webkit-fill-available;
+}
+
 body,html {
     text-align: center;
-    height: 100%;
+    height: -webkit-fill-available;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     margin: 0;
