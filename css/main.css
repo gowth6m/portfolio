@@ -55,15 +55,12 @@ OVERALL CSS
     transition: all ease-in-out 100ms;
 }
 
-body {
-  min-height: 100vh;
-  /* mobile viewport bug fix */
-  min-height: -webkit-fill-available;
+html {
+    height: -webkit-fill-available;
 }
 
 body,html {
     text-align: center;
-    height: -webkit-fill-available;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     margin: 0;
@@ -73,10 +70,13 @@ body,html {
 }
 
 body {
-    overflow-x: hidden;
-    background-color: var(--body);
-    color: var(--white);
-    font-family: var(--body-font);
+	min-height: 100vh;
+	/* mobile viewport bug fix */
+	min-height: -webkit-fill-available;
+	overflow-x: hidden;
+	background-color: var(--body);
+	color: var(--white);
+	font-family: var(--body-font);
 }
 
 img {
