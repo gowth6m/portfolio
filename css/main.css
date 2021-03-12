@@ -884,12 +884,12 @@ PORTFOLIO CSS
 }
 
 .grid-img-2:hover {
-    background: url(../../assets/gol.gif);
+    background: url(../../assets/optimized/stugether_m.png);
     background-size: cover; 
 }
 
 .grid-img-3:hover {
-    background: url(../../assets/zombie_maze.gif);
+    background: url(../../assets/optimized/zombie_maze.gif);
     background-size: cover;
 }
 
@@ -904,7 +904,7 @@ PORTFOLIO CSS
 }
 
 .grid-img-6:hover {
-    background: url(../../assets/pwGenIphone.jpg);
+    background: url(../../assets/gol.gif);
     background-size: cover;
 }
 
