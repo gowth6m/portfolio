@@ -173,9 +173,8 @@ NAV CSS
 
     .navigation {
         position: fixed;
-        min-height: 100vh;
-        /* mobile viewport bug fix */
-        min-height: -webkit-fill-available;
+/*         min-height: 100vh;
+        min-height: -webkit-fill-available; */
     }
 
     .burger-menu {
@@ -189,7 +188,9 @@ NAV CSS
 
     .nav-links {
         position: fixed;
-        height: 100vh;
+        /* height: 100vh; */
+	min-height: 100vh;
+        min-height: -webkit-fill-available;
         width: 100vw;
         flex-direction: column;
         clip-path: circle() (30px at 89% 5%);
