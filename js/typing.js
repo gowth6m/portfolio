@@ -9,7 +9,7 @@ const textArray = ["is looking for internships",
     "is studying in Exeter",
     "loves the gym!",
     "wants to create iOS apps", 
-    "is looking for internships",
+    "is looking for jobs",
     "wants to get into data science",
     "loves to draw"];
 
