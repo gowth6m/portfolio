@@ -89,16 +89,16 @@ function loop(timeNow) {
     }
     
     // To pause the animation as requestAnimationFrame doesn't load during window not focus
-    if(!document.hasFocus()) {
-        starXCoords = []
-        starYCoords = []
+    // if(!document.hasFocus()) {
+    //     starXCoords = []
+    //     starYCoords = []
 
-        // console.log("System is paused");
-        stars.splice(0,stars.length);
+    //     // console.log("System is paused");
+    //     stars.splice(0,stars.length);
 
-        generateStars();
-        // console.log("Stars regen");
-    }
+    //     generateStars();
+    //     // console.log("Stars regen");
+    // }
 
     // call the next frame
     requestAnimationFrame(loop);
