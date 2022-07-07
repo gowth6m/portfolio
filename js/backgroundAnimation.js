@@ -89,12 +89,12 @@ function loop(timeNow) {
     }
     
     // To pause the animation as requestAnimationFrame doesn't load during window not focus
-    // if(!document.hasFocus()) {
-    //     console.log("System is paused");
-    //     stars.splice(0,stars.length);
-    //     generateStars();
-    //     console.log("Stars regen");
-    // }
+    if(!document.hasFocus()) {
+        console.log("System is paused");
+        stars.splice(0,stars.length);
+        generateStars();
+        console.log("Stars regen");
+    }
 
     // call the next frame
     requestAnimationFrame(loop);
@@ -102,7 +102,6 @@ function loop(timeNow) {
 
 function loopDuringPause() {
     console.log("paused");
-
 }
 
 function randomSign() {
