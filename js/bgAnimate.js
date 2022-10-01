@@ -70,7 +70,7 @@ const tick = time => {
   let elapsed = time - prevTime;
   prevTime = time;
 
-  moveStars(elapsed * 0.01);
+  moveStars(elapsed * 0.03);
 
   clear();
 
