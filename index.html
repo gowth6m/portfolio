@@ -1,114 +1,221 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./Images/tab-blue.png" type="image/x-icon" rel="shortcut icon">
-    <link href="https://fonts.googleapis.com/css?family=Poor+Story" rel="stylesheet">
-    <!--Frameworks-->
-    <script src="./JS/jquery.js"></script>
-    <!--CSS-->
-    <link rel="stylesheet" href="./CSS/style0.css">
-    <link rel="stylesheet" href="./CSS/style1.css">
-    <!--JS-->
-    <script src="../JS/script.js"></script>
-    <script src="../JS/parallax.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Portfolio of Gowthaman Ravindrathas - student, designer and developer">
+    <meta name="keywords" content="webdesign, web development, UX, UI, apps, graphic design, software engineering">
+    <meta property="og:image" content="https://i.imgur.com/8kQ0Jfx.png">
+    <meta name="author" content="Gowthaman Ravindrathas">
+    <link href="./assets/favicon.ico" type="image/x-icon" rel="shortcut icon">
     <title>Gowtham Ravindrathas</title>
-    <!--meta http-equiv="refresh" content="10"-->
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/min/main_min.css">
+    <!-- <link rel="stylesheet" href="./css/main.css"> -->
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
-
-<body class="parallax-bg">
-    <header>
-        <!--img src="" alt="my-image" class="my-image"-->
-        <h1 class="title glitch1">Gowtham Ravindrathas</h1>
-        <nav class="nav-bar0">
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About Me</a></li>
-                <li><a href="">My Portfolio</a></li>
-                <li><a href="">Contact Me</a></li>
+<body>
+    <div class="container-main">
+        <div class="navigation">
+            <div class="burger-menu">
+                <div class="line l1"></div>
+                <div class="line l2"></div>
+                <div class="line l3"></div>
+            </div>
+            <ul class="nav-links">
+                <li><a class="link1" href="#home">Home</a></li>
+                <li><a class="link2" href="#aboutme">About</a></li>
+                <li><a class="link3" href="#portfolio">Portfolio</a></li>
+                <li><a class="link4" href="#contactme">Contact</a></li>
             </ul>
-        </nav>
-    </header>
+        </div>
+        <!-- Main -->
+        <div class="container">
+            <!-- INTRO -->
+            <div class="introduction" id="home">
+                <div class="container-inner">
+                    <!-- THE ANIMATION -->
+                    <div class="background-animation" id="background-animation" onresize="resizeBGCanvas()">
+                        <!-- <script src="./js/backgroundAnimation.js"></script> -->
+                        <canvas id="canvas"></canvas>
+                        <script src="./js/bgAnimate.js"></script>
+                    </div>
 
-    <hr>
+                    <div class="intro-info">
+                        <div class="title plax">I'm <span>Gowtham</span><span class="title-span">.</span></div>
+                        <div class="title-text plax">A programmer who <span class="typed-text"> </span><span class="typed-text-cursor">|</span></div>
+                    </div>
+                    <div class="side-text-left">– HELLO THERE –</div>
+                    <div class="side-text-right">– HELLO THERE –</div>
+                    <a class="arrow-div" href="#aboutme">
+                        <div class="arrow-text">SCROLL</div>
+                        <div class="arrow"></div>
+                    </a>
+                </div>
+            </div>
 
-    <section class="home">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, sint?
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-    </section>
+            <!-- ABOUT ME -->
+            <div class="aboutme" id="aboutme">
+                <div class="aboutme-container">
+                    <div class="about-side-text-left">– HELLO AGAIN –</div>
+                    <div class="about-side-text-right">– SCROLL DOWN –</div>
+                    <div class="aboutme-section-title">
+                        <div class="aboutme-section-one-title">About Me</div>
+                        <div class="aboutme-section-one-title-bold">About Me</div>
+                        <div class="aboutme-section-one-title">About Me</div>
+                        <div class="aboutme-section-one-title">About Me</div>
+                    </div>
+                    <div class="aboutme-section-one">
+                        <div class="aboutme-section-one-container">
+                        <div class="aboutme-section-one-text">
+                            I'm an App Developer at the University of Exeter. I'm passionate about programming and dabbling in design. I love making user & browser-friendly websites and apps, and am currently delving into machine learning and its applications. 
+                            <br><br>
+                            I'm currently learning more about Swift and using machine learning in apps to solve problems. Feel free to contact me by email or check out my work on GitHub.
+                            <div class="aboutme-photo">
+                                <img class="my-photo" src="./assets/me.jpg" alt="">
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-    <hr>
+            <div class="aboutme" id="aboutme">
+                <div class="slanted-line">
+                    <svg style='width: 100%; height: 100%;'>
+                        <line stroke-dasharray="15, 15"  x1="0" y1="100%" x2="100%" y2="0"
+                            style="stroke:rgb(255, 255, 255);stroke-width:2"/>
+                    </svg>
+                </div>
+                <div class="aboutme-container aboutme-container-two">
+                    <div class="about-side-text-left">– SKILL SECTION –</div>
+                    <div class="about-side-text-right">– SCROLL DOWN –</div>
+                    <div class="aboutme-section-one">
+                        <div class="aboutme-section-one-container">
+                        <ul class="aboutme-skill-list">
+                            <li>Java</li>
+                            <li>Python</li>
+                            <li>HTML, CSS & JS</li>
+                            <li>C, C# & C++</li>
+                            <li>Swift, Dart</li>
+                            <li>Haskell</li>
+                            <li>SQL</li>
+                            <li>AWS</li>
+                            <li>Flutter, Vue.js, Django</li>
+                            <li>Front-End Frameworks 
+                            <br>(e.g. Bootstrap, jQuery)</li>
+                            <li>Unity Game Engine</li>
+                        </ul>
+                        <div class="aboutme-contact-icons">
+                            <a href="mailto:contact@gowtham.co.uk" target="_blank" class="aboutme-contact-fa fa fa-envelope fa-icons" aria-hidden="true"></a>
+                            <a href="https://www.linkedin.com/in/gowth6m/" target="_blank" class="aboutme-contact-fa fa fa-linkedin-square fa-icons" aria-hidden="true"><a>
+                            <a href="https://github.com/gowth6m/" target="_blank" class="aboutme-contact-fa fa fa-github-square fa-icons" aria-hidden="true"></a>
+                            <!-- <a href="./pages/portfolio.html" class="aboutme-to-portfolio-buttonn">PORTFOLIO</a> -->
+                        </div>
+                        </div>
+                    </div>
+                    <div class="aboutme-section-title-two">
+                        <div class="aboutme-section-two-title">Skills</div>
+                        <div class="aboutme-section-two-title">Skills</div>
+                        <div class="aboutme-section-two-title-bold">Skills</div>
+                        <div class="aboutme-section-two-title">Skills</div>
+                    </div>
+                </div>
+                <div class="slanted-line-bot">
+                    <svg style='width: 100%; height: 100%;'>
+                        <line stroke-dasharray="15, 15"  x1="0" y1="0%" x2="100%" y2="100%"
+                            style="stroke:rgb(255, 255, 255);stroke-width:2"/>
+                    </svg>
+                </div>
+            </div>
 
-    <section class="about">Lorem ipsum dolor sit amet.
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-    </section>
 
-    <hr>
+            <div class="portfolio" id="portfolio">
+                <div class="portfolio-title">Portfolio<span>.</span></div>
+                <div class="portfolio-grid">
+                    <div class="porfolio-grid-box-img grid-img-1" href="" data-lightbox="homePortfolio">
+                        <div class="portfolio-grid-box-container">
+                            <div class="portfolio-grid-box-title">Lift Simulation</div>
+                            <div class="portfolio-grid-box-info">A simulation of a lift system implemented in Java with GUI.</div>
+                            <a href="https://github.com/gowth6m/lift-system" target="_blank" class="portfolio-button">GitHub</a>
+                        </div>
+                    </div>
+        
+                    <div class="porfolio-grid-box-img vertical grid-img-2" href="" data-lightbox="homePortfolio">
+                        <div class="portfolio-grid-box-container">
+                            <div class="portfolio-grid-box-title">Stugether</div>
+                            <div class="portfolio-grid-box-info">Web application built with Django to connect students together. </div>
+                            <a href="https://github.com/gowth6m/stugether" target="_blank" class="portfolio-button">GitHub</a>
+                            <a href="http://b0344adf-eu-gb.lb.appdomain.cloud:8080/" target="_blank" class="portfolio-button">View</a>
+                        </div>
+                   </div>
+        
+                    <div class="porfolio-grid-box-img horizontal grid-img-3" href="" data-lightbox="homePortfolio">
+                        <div class="portfolio-grid-box-container">
+                        <div class="portfolio-grid-box-title">Zombie Maze Game</div>
+                        <div class="portfolio-grid-box-info">A simple 2D top-down zombie shooting game created in Python using the PyGame library.</div>
+                        <a href="https://github.com/gowth6m/zombie-maze" target="_blank" class="portfolio-button">GitHub</a>
+                        </div>
+                    </div>
+        
+                    <div class="porfolio-grid-box-img grid-img-4" href="" data-lightbox="homePortfolio">
+                        <div class="portfolio-grid-box-container">
+                        <div class="portfolio-grid-box-title">Gravity Simulator</div>
+                        <div class="portfolio-grid-box-info">Simulation of gravity between particles written in JavaScript.</div>
+                        <a href="https://github.com/gowth6m/gravity-simulator" target="_blank" class="portfolio-button">GitHub</a>
+                        <a href="https://gowth6m.github.io/gravity-simulator/" target="_blank" class="portfolio-button">View</a>
+                        </div>  
+                    </div>
 
-    <section class="portfolio">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut impedit consequuntur quod voluptate qui corrupti voluptatibus culpa commodi fuga. Inventore!
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-    </section>
+                    <div class="porfolio-grid-box-img grid-img-6" href="" data-lightbox="homePortfolio">
+                        <div class="portfolio-grid-box-container">
+                            <div class="portfolio-grid-box-title">Game of Life</div>
+                            <div class="portfolio-grid-box-info">Implementation of Conway's Game of Life in Haskell using an imperative approach. </div>
+                            <a href="https://github.com/gowth6m/game-of-life-haskell" target="_blank" class="portfolio-button">GitHub</a>
+                        </div>   
+                    </div>
+        
+                    <div class="porfolio-grid-box-img grid-img-5" href="" data-lightbox="homePortfolio">
+                        <div class="portfolio-grid-box-container">
+                        <div class="portfolio-grid-box-title">Password Generator</div>
+                        <div class="portfolio-grid-box-info">Simple password generator written in JavaScript.</div>
+                        <a href="https://github.com/gowth6m/password-generator" target="_blank" class="portfolio-button">GitHub</a>
+                        <a href="https://gowth6m.github.io/password-generator/" target="_blank" class="portfolio-button">View</a>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
 
-    <hr>
-
-    <section class="contact">
-        <form action="" class="contact-child">
-            <fieldset>
-                <legend>Contact me!</legend>
-                <b style="color:white;">Your Name (required)</b><input class ="inputs" type="text" name="name" size="25"></input><br>
-                <b style="color:white;">Email (required)</b><input type="email" name="email" class="inputs" size="25"><br>
-                <b style="color:white;">Subject</b><input type="text" name="message" class="inputs" size="25"><br>
-                <b style="color:white;">Your Message</b>
-                <textarea id ="para1" class ="inputs" name="message" rows="8" cols="32" maxlength="200" placeholder="Write your message here..."></textarea>
-                <br>
-                <input type="submit" class="button-style" value="Send" onclick="checker()"/>
-            </fieldset>
-        </form>
-    </section>
-
-    <!--section class="randomtry">
-        <svg style="position: absolute; width: 0; height: 0;" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <defs>
-                <symbol id="icon-paperplane" viewBox="0 0 1024 1024">
-                    <title>paperplane</title>
-                    <path class="path1" d="M1009.376 5.12c-5.312-3.424-11.36-5.12-17.376-5.12-6.176 0-12.384 1.76-17.76 5.376l-960 640c-9.888 6.56-15.328 18.112-14.048 29.952 1.216 11.808 8.896 22.016 19.936 26.368l250.368 100.192 117.728 206.016c5.632 9.888 16.096 16 27.424 16.128 0.128 0 0.224 0 0.352 0 11.232 0 21.664-5.952 27.424-15.552l66.464-110.816 310.24 124.064c3.808 1.536 7.808 2.272 11.872 2.272 5.44 0 10.816-1.376 15.68-4.128 8.448-4.736 14.24-13.056 15.872-22.624l160-960c2.080-12.576-3.488-25.184-14.176-32.128zM100.352 664.864l741.6-494.432-539.2 577.184c-2.848-1.696-5.376-3.936-8.512-5.184l-193.888-77.568zM326.048 770.112c-0.064-0.128-0.16-0.192-0.224-0.32l606.176-648.8-516.768 805.184-89.184-156.064zM806.944 947.488l-273.312-109.312c-6.496-2.56-13.248-3.424-19.936-3.808l420.864-652.416-127.616 765.536z"></path>
-                </symbol>
-            </defs>
-        </svg>
-
-        <a href="" target="_blank" class="contact-button">
-            Contact 
-            <svg class="icon icon-paperplane"><use xlink:href="#icon-paperplane"></use></svg>
-            <span>gowtham4n@gmail.com</span>
-        </a>
-    </section-->
-
-    <footer class="footer">
-        <br>
-        © 2018 GOWTHAMAN RAVINDRATHAS . MADE IN UNITED KINGDOM
-        <br>
-        <nav class="footer-nav">
-            <ul>
-                <li><a href="">FOLLOW ME ON TWITTER</a></li>
-                <li><a href="">FOLLOW ME ON INSTAGRAM</a></li>
-            </ul>
-        </nav>
-        <br>
-        This site was built with great tools like Photoshop, Sublime Text 2 and Codekit. Font used in headlines is Brandon Grotesque, font in body copy is FF Meta Serif Web Pro. Both fonts are served up via Typekit.
-    </footer>
-
+            <!-- CONTACT ME -->
+            <div class="contact" id="contactme">
+                <div class="slanted-line-contact">
+                    <svg style='width: 100%; height: 100%;'>
+                        <line stroke-dasharray="15, 15"  x1="0" y1="100%" x2="100%" y2="0%"
+                            style="stroke:rgb(255, 255, 255);stroke-width:2"/>
+                    </svg>
+                </div>
+                <div class="container-contactme">
+                    <div class="contact-text">To get in touch,
+                        email: <a href="mailto:contact@gowtham.co.uk" class="contact-link">contact@gowtham.co.uk</a><br>
+                        or message me on LinkedIn
+                    </div>
+                    <div class="contact-icons">
+                        <a href="mailto:contact@gowtham.co.uk" target="_blank" class="fa fa-envelope fa-icons" aria-hidden="true"></a>
+                        <a href="https://www.linkedin.com/in/gowth6m/" target="_blank" class="fa fa-linkedin-square fa-icons" aria-hidden="true"><a>
+                        <a href="https://github.com/gowth6m/" target="_blank" class="fa fa-github-square fa-icons" aria-hidden="true"></a>
+                    </div>
+                </div>
+                <div class="footer">
+                    <div class="footer-text">GOWTHAMAN RAVINDRATHAS  © 2018</div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
-
+<script src="./js/min/typing_min.js"></script>
+<script src="./js/min/main_min.js"></script>
 </html>
