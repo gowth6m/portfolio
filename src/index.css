@@ -1,11 +1,10 @@
 :root {
     --white: #f8f8f8;
     --black: black;
-    /* --white: black; */
-    /* --black: white; */
+    /* --white: black;
+    --black: rgb(225, 225, 225); */
+    /* --black: #f8f8f8; */
     --greyWhite: #cccccc;
-    --starColorTwo: rgba(0, 0, 0, 0.25);
-    --canvasColor: rgb(216, 216, 216);
 }
 
 :root {

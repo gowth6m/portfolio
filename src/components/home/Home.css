@@ -30,7 +30,7 @@
     text-transform: uppercase;
     font-weight: 900;
     letter-spacing: 6px;
-    color: var(--portfolioBG);
+    color: var(--body);
     text-shadow: -4px 0 var(--white), 0 4px var(--white), 4px 0 var(--white), 0 -4px var(--white);
 }
 

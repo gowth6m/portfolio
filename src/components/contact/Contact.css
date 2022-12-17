@@ -36,6 +36,7 @@
     text-transform: capitalize;
     border: var(--white) 1px solid;
     padding: 2%;
+    background-color: transparent;
 }
 
 .contact-submit-btn:hover,
