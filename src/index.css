@@ -1,5 +1,8 @@
 :root {
     --white: #f8f8f8;
+    --black: black;
+    /* --white: black; */
+    /* --black: white; */
     --greyWhite: #cccccc;
     --starColorTwo: rgba(0, 0, 0, 0.25);
     --canvasColor: rgb(216, 216, 216);
@@ -7,10 +10,8 @@
 
 :root {
     --body: #0e0e0e;
-    /* --body: #1f1f1f; */
- 
+    /* --body: #f8f8f8; */
     --NavColor: var(--white);
-    --aboutTextColor: var(--white);
     /* PORTFOLIO */
     --portfolioBG: #040403;
     --portfolioGallery: rgb(20, 20, 20);
@@ -18,7 +19,6 @@
 }
 
 :root {
-    /* --body-font: 'Montserrat', sans-serif; */
     --body-font: 'Comfortaa', cursive;
     --title-font: 'Hammersmith One', sans-serif;
     --big-title-font-size: 5rem;
