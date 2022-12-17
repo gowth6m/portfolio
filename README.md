@@ -7,6 +7,7 @@ To get dependencies
 npm install
 ```
 
+To run website
 ```
 npm start
 ```
