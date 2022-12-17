@@ -1,20 +1,7 @@
 :root {
     --white: #f8f8f8;
     --black: black;
-    /* --white: black;
-    --black: rgb(225, 225, 225); */
-    /* --black: #f8f8f8; */
-    --greyWhite: #cccccc;
-}
-
-:root {
     --body: #0e0e0e;
-    /* --body: #f8f8f8; */
-    --NavColor: var(--white);
-    /* PORTFOLIO */
-    --portfolioBG: #040403;
-    --portfolioGallery: rgb(20, 20, 20);
-    --portfolioGalleryHover: rgba(255, 255, 255, 0.4);
 }
 
 :root {
@@ -42,6 +29,17 @@
     --normal-font-size: 1rem;
 }
 }
+
+.theme-light {
+    --black: rgb(225, 225, 225); 
+    --white: black;
+    --body: #f8f8f8;
+ }
+ .theme-dark {
+    --white: #f8f8f8;
+    --black: black;
+    --body: #0e0e0e;
+ }
 
 * {
 box-sizing: border-box;

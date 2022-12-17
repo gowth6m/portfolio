@@ -4,6 +4,22 @@ import "./NavBar.css";
 
 function NavBar() {
   const [click, setClick] = useState(false);
+  const [lightTheme, setLightTheme] = useState(false);
+
+  const setTheme = (isLightTheme: boolean) => {
+    if (lightTheme) {
+      document.documentElement.style.setProperty("--body", "#0e0e0e");
+      document.documentElement.style.setProperty("--black", "black");
+      document.documentElement.style.setProperty("--white", "#f8f8f8");
+    } else {
+      document.documentElement.style.setProperty("--body", "#f8f8f8");
+      document.documentElement.style.setProperty(
+        "--black",
+        "rgb(225, 225, 225)"
+      );
+      document.documentElement.style.setProperty("--white", "black");
+    }
+  };
 
   const handleClickScroll = (id: string) => {
     const element = document.getElementById(id);
@@ -60,7 +76,11 @@ function NavBar() {
           <NavLink
             to="/"
             className="nav-logo"
-            onClick={() => handleClickScroll("home")}
+            onClick={() => {
+              // handleClickScroll("home");
+              setTheme(lightTheme);
+              setLightTheme(!lightTheme);
+            }}
           >
             <img
               src={process.env.PUBLIC_URL + "/assets/logo_transparent.svg"}
