@@ -195,6 +195,3 @@ function NavBar() {
 }
 
 export default NavBar;
-function ThemeContext(ThemeContext: any) {
-  throw new Error("Function not implemented.");
-}
