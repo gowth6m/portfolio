@@ -1,23 +1,26 @@
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
+import { useGlobalContext } from "../context/GlobalContext";
 import "./NavBar.css";
 
 function NavBar() {
   const [click, setClick] = useState(false);
-  const [lightTheme, setLightTheme] = useState(false);
+  const { lightThemeGlobal, setLightThemeGlobal } = useGlobalContext();
 
-  const setTheme = (isLightTheme: boolean) => {
-    if (lightTheme) {
-      document.documentElement.style.setProperty("--body", "#0e0e0e");
-      document.documentElement.style.setProperty("--black", "black");
-      document.documentElement.style.setProperty("--white", "#f8f8f8");
-    } else {
+  const changeTheme = () => {
+    if (lightThemeGlobal) {
       document.documentElement.style.setProperty("--body", "#f8f8f8");
       document.documentElement.style.setProperty(
         "--black",
         "rgb(225, 225, 225)"
       );
       document.documentElement.style.setProperty("--white", "black");
+      setLightThemeGlobal(!lightThemeGlobal);
+    } else {
+      document.documentElement.style.setProperty("--body", "#0e0e0e");
+      document.documentElement.style.setProperty("--black", "black");
+      document.documentElement.style.setProperty("--white", "#f8f8f8");
+      setLightThemeGlobal(!lightThemeGlobal);
     }
   };
 
@@ -78,8 +81,7 @@ function NavBar() {
             className="nav-logo"
             onClick={() => {
               // handleClickScroll("home");
-              setTheme(lightTheme);
-              setLightTheme(!lightTheme);
+              changeTheme();
             }}
           >
             <img
@@ -193,3 +195,6 @@ function NavBar() {
 }
 
 export default NavBar;
+function ThemeContext(ThemeContext: any) {
+  throw new Error("Function not implemented.");
+}
