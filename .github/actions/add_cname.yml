@@ -12,7 +12,7 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
     - name: Create CNAME file
-      run: echo 'gowtham.io' > CNAME && echo 'www.gowtham.io' >> CNAME
+      run: echo 'gowtham.co.uk' > CNAME
     - name: Commit and push changes
       uses: stefanzweifel/git-auto-commit-action@v4
       with:
